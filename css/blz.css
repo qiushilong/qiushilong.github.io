@@ -1,0 +1,487 @@
+
+/* nav1 */
+.nav1{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0);
+}
+
+/* logo */
+.big_logo{
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 10px;
+}
+
+/* 菜单 */
+.nav1 ul{
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    width: 790px;
+    height: 84px;
+}
+.nav1 ul li{
+    float: left;
+    width: 110px;
+    height: 84px;
+    line-height: 84px;
+    margin-right: 20px;
+}
+
+.nav1 ul li a{
+    display: block;
+    margin-top: 20px;
+    width: 110px;
+    height: 64px;
+    color: #6e6a63;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.nav1 ul li a em {
+    display: block;
+    font-style: normal;
+    color: #464441;
+    font-size: 10px;
+    margin-top: -5px;
+}
+/* 登陆 */
+.zhs{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 188px;
+    height: 45px;
+    margin-top: 17px;
+}
+.zhs img{
+    float: left;
+    width: 44px;
+    border: 1px solid #d9ad50;
+    border-radius: 42px;
+}
+.zhs a{
+    padding-left: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    vertical-align: top;
+}
+.zhs em{
+    padding-left: 5px;
+    font-style: normal;
+    color: #858792;
+    font-size: 12px;
+}
+
+
+.bl_bg{
+    position: relative;
+    width: 100%;
+}
+/* 背景渐变 */
+.bl_bg::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+}
+/* 头像栏 */
+.txcolumn{
+    position: absolute;
+    top: -266px;
+    left: 0;
+    height: 366px;
+    z-index: 1;
+}
+.txcolumn_1{
+    width: 1200px;
+    height: 144px;
+    background-color: skyblue;
+    background: url(../img/heroIcon-bg.png) top center no-repeat;
+}
+.txcolumn_1::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 534px;
+    width: 130px;
+    height: 130px;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+.txcolumn_1 img{
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: 11px 0 0 540px;
+    border-radius: 50%;
+}
+.txcolumn_2,
+.txcolumn_3,
+.txcolumn_4{
+    margin-top: 30px;
+    text-align: center;
+}
+.txcolumn_3 span{
+    font-size: 60px;
+    line-height: 60px;
+    color: #c39b5e;
+    margin-left: 30px;
+}
+.txcolumn_4{
+    font-style: normal;
+    font-size: 20px;
+    color: #a3a19e;
+}
+
+/* nav2 */
+.nav2{
+    position:fixed;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+.nav2_left{
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 157px;
+    height: 39px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+.nav2_left .t1{
+    font-size: 14px;
+    color: #c39b5e;
+}
+.nav2_left .t2{
+    font-size: 20px;
+    color: #f2d2a2;
+}
+.nav2 ul{
+    position: absolute;
+    top: 25px;
+    left: 350px;
+}
+.nav2 ul li{
+    width: 160px;
+    height: 30px;
+    float: left;
+    margin-left: 27px;
+}
+.nav2 ul li a{
+    font-size: 14px;
+    color: #a59e94;
+}
+.nav2 ul li a:hover{
+    text-decoration: underline;
+}
+.nav2 ul li .in{
+    color: #c39b5e;
+}
+.nav2 ul li em{
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    margin: 0 0px 5px 23px;
+    background: url(../img/heroIcon-bg.png) no-repeat -126px -159px;
+}
+
+
+
+.nav3{
+    position: relative;
+    width: 100%;
+    height: 6300px;
+    background-color: #000;
+    margin-top: -5px;
+}
+
+/* 技能展示 */
+.skill_show{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+}
+.title{
+    font-size: 40px;
+    color: #c39b5e;
+    text-align: center;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 1200px;
+    height: 9px;
+    background: url(../img/heroIcon-bg.png) no-repeat 0px -220px;
+}
+.skill_show p{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #8f897f;
+}
+.video_page{
+    width: 1200px;
+    height: 510px;
+    margin-top: 25px;
+}
+.video_page .video_show{
+    position: relative;
+    float: left;
+    width: 868px;
+    height: 510px;
+    border: 1px solid rgba(195,155,94, .2);
+}
+.video_show img{
+    margin: 20px;
+}
+.video_show i{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 93px;
+    height: 93px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.video_show i::before{
+    content: '';
+    position: absolute;
+    top: 31%;
+    left: 43%;
+    border-width: 15px 20px;
+    border-color: transparent transparent transparent #fff;
+    border-style: dashed dashed dashed solid;
+}
+.video_show i::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    border-width: 7px 10px;
+    border-color: transparent transparent transparent #000;
+    border-style: dashed dashed dashed solid;
+}
+/* 皮肤亮点 */
+.lightspot{
+    float: right;
+    width: 310px;
+    height: 510px;
+}
+.lightspot h6 {
+    font-size: 26px;
+    color: #c39b5e;
+    text-align: center;
+    line-height: 1;
+    margin: 20px auto 24px;
+}
+/* 亮点列表 */
+.spot-list{
+	overflow: hidden;
+	/* overflow-y: scroll; */
+    width: 310px;
+    height: 400px;
+}
+
+.spot-list li{
+    width: 310px;
+    height: 80px;
+	background: url(../img/bg-merit.png) no-repeat;
+	padding-left: 30px;
+	margin-top: 20px;
+}
+.spot-list li p{
+	margin-top: 0;
+	font-size: 16px;
+    color: #8f897f;
+    line-height: 80px;
+	text-align: left;
+}
+.spot-list li p:hover{
+	color: #c39b5e;
+}
+.spot-list li p i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../img/icon-spot.png) no-repeat; 
+}
+
+/* 技能动态图显示 */
+.skill_gif_show{
+    overflow: hidden;
+	width: 1088px;
+	height: 360px;
+	margin: 100px 0 0 68px;
+    background: #1a1b1d;
+    position: relative;
+}
+.skill_gif_show ul{
+    width: 5000px;
+}
+.skill_gif_show ul li{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 754px;
+}
+.skill_gif_show ul li:nth-child(2){
+    left: 754px;
+}
+.skill_gif_show ul li:nth-child(3){
+    left: 866px;
+}
+.skill_gif_show ul li:nth-child(4){
+    left: 978px;
+}
+.skill_gif_show ul li img{
+    width: 638px;
+    margin-left: -4px;
+}
+.skill_label{
+	display: inline-block;
+	width: 112px;
+    height: 360px;
+    background-color: #1a1b1d;
+    border-left: 3px solid #000;
+}
+.skill_label div{
+    position: relative;
+	width: 94px;
+	height: 330px;
+	margin: 15px 0 0 10px;
+	border-left: 1px solid  rgba(185, 140, 82, 0.1);
+	border-right: 1px solid  rgba(185, 140, 82, 0.1);
+}
+.skill_label .span1,
+.skill_label .span2{
+    position: absolute;
+    top: 34px;
+    left: 27px;
+	display: inline-block;
+	font-size: 30px;
+	color: #c39b5e;
+    width: 35px;
+    border-bottom: 1px solid rgba(195, 155, 94, 0.5);
+}
+.skill_label .span2{
+    top: 100px;
+    left: 28px;
+    border: none;
+    font-weight: 700;
+}
+
+/* 灵感特性模块 */
+.inspiration_column{
+    position: absolute;
+    top: 1470px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    /* background-color: pink; */
+}
+.inspiration_column p{
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #8f897f;
+    margin-top: 40px;
+}
+.inspiration_column b{
+    font-size: 16px;
+     color:#8f897f;
+}
+.pic_contain{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.yellow{
+    font-style: normal;
+    color: rgb(218, 165, 32);
+    font-size: 16px;
+}
+.bold{
+    font-weight: 700;
+}
+
+/* 皮肤语音模块 */
+.skin_voice{
+    position: absolute;
+    top: 5700px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+}
+.tc{
+    float: left;
+    width: 586px;
+    height: 401px;
+    margin-top: 40px;
+}
+.tc:last-child{
+    float: right;
+}
+.tc h6{
+    font-size: 24px;
+    color: #c39b5e;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.tc ul{
+    overflow: hidden;
+    width: 584px;
+    height: 325px;
+    background: #0d0d0e;
+    padding: 10px 0;
+}
+.tc ul li{
+    width: 565px;
+    height: 63px;
+    padding-left: 40px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #8f897f;
+}
+.tc ul li:hover{
+    color: #c39b5e;
+    cursor: pointer;
+}
+.tc ul li img{
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+/* 结束栏 */
+footer{
+    width: 100%;
+    height: 135px;
+    background-color: #141414;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 40px;
+}
+footer a{
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+}
