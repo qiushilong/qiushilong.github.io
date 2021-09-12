@@ -1,0 +1,36 @@
+@charset "UTF-8";
+* {
+  font-family: 'PingFang','Microsoft YaHei',Arial,'宋体'; }
+
+body {
+  min-width: 320px; }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2707884 */
+  src: url("../fonts/17-fonts/iconfont.woff") format("woff2"), url("../fonts/17-fonts/iconfont.woff2") format("woff"), url("../fonts/17-fonts/iconfont.ttf") format("truetype"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.main {
+  width: 95%;
+  margin: 0 auto; }
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .content img {
+    width: 3.28rem;
+    height: 3.58rem; }
+  .content p {
+    font-size: .52rem;
+    color: #CBCCD3; }
+
+/*# sourceMappingURL=circle.css.map */

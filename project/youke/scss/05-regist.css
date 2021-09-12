@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.bg {
+  background: url(../images/02-login/02-login-bg_03.jpg) no-repeat;
+  background-size: 100% 37.3333333333vw;
+  background-position: 0 0;
+}
+.bg .regist {
+  width: 95%;
+  margin: 0 auto;
+}
+.bg .regist .banner > a > p.back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 16vw;
+  color: #FFFFFF;
+  font-size: 5.3333333333vw;
+  font-size: bold;
+}
+.bg .regist .banner > p.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 26.6666666667vw;
+  font-size: 5.3333333333vw;
+  font-size: bold;
+  color: #FFFFFF;
+  margin-left: 2vw;
+}
+.bg .regist .change-form {
+  margin-top: 10vw;
+}
+.bg .regist .change-form > form .ra {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+.bg .regist .change-form > form .ra > p {
+  display: flex;
+  align-items: center;
+  color: #878C9A;
+  font-size: 3.3333333333vw;
+}
+.bg .regist .change-form > form .ra > p > a {
+  color: #0F9CFF;
+  font-size: 3.3333333333vw;
+}
+.bg .regist .change-form > form .ra .radio {
+  margin-right: 2vw;
+  appearance: grey;
+  width: 4vw;
+  height: 4vw;
+  background: url(../images/01-index/01-datasearch.jpg) no-repeat;
+  background-size: cover;
+}
+.bg .regist .change-form > form .ra .radio:checked {
+  /* 选中时 */
+  appearance: none;
+  -webkit-appearance: none;
+  background: url(../images/02-login/05-regist-dui.png) no-repeat;
+  background-size: cover;
+}
+.bg .regist .change-form > form .search {
+  width: 100%;
+  height: 11.4666666667vw;
+  border-radius: 5vw;
+  background-color: #F5F6FA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 4vw;
+}
+.bg .regist .change-form > form .search .width65 {
+  width: 65%;
+}
+.bg .regist .change-form > form .search .width85 {
+  width: 85%;
+}
+.bg .regist .change-form > form .search > input {
+  font-size: 3.74vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.bg .regist .change-form > form .search > img {
+  width: 4.6666666667vw;
+}
+.bg .regist .change-form > form .search > p {
+  color: #0F9CFF;
+  font-size: 3.74vw;
+}
+.bg .regist .change-form > form .btn {
+  background-color: #0F9CFF;
+  margin-top: 13.3333333333vw;
+}
+.bg .regist .change-form > form .btn > input {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=05-regist.css.map */

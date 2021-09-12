@@ -1,0 +1,199 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hr-gray {
+  width: 100%;
+  height: 2.6666666667vw;
+  background: #f9fbfc;
+  margin-top: 2.5vw;
+  margin-bottom: 2.6666666667vw;
+}
+
+.bg {
+  background-color: #FFFFFF;
+  position: relative;
+}
+.bg .border-absolute {
+  width: 100%;
+  position: absolute;
+  border-top-left-radius: 3vw;
+  border-top-right-radius: 3vw;
+  background-color: #FFFFFF;
+}
+.bg .fixed {
+  position: fixed;
+  right: 3.3333333333vw;
+  bottom: 8vw;
+  background-color: #FFFFFF;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0vw 0vw 1vw 1vw rgba(0, 0, 0, 0.05);
+}
+.bg .fixed > img {
+  padding: 4.4vw 4.5333333333vw;
+  width: 4.5333333333vw;
+  height: 4.2666666667vw;
+}
+.bg .html-title {
+  height: 14.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg .html-title p {
+  font-size: 4.6666666667vw;
+  color: #000000;
+}
+.bg .good-img {
+  position: relative;
+}
+.bg .good-img .goodimg {
+  width: 100%;
+}
+.bg .good-img .share {
+  position: absolute;
+  top: 4vw;
+  right: 3.3333333333vw;
+  width: 8.2666666667vw;
+  height: 8.2666666667vw;
+}
+.bg .good-img .page {
+  position: absolute;
+  right: 4vw;
+  top: 80vw;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4vw;
+  padding: 1vw 3vw;
+}
+.bg .good-content {
+  top: 106vw;
+}
+.bg .good-content .good-content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.bg .good-content .good-content-title > p {
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+.bg .good-content .good-content-title .good-content-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.bg .good-content .good-content-title .good-content-info > p {
+  color: #878c9a;
+  font-size: 3.6vw;
+}
+.bg .good-content .good-content-title .good-content-info .good-price {
+  display: flex;
+  align-items: baseline;
+}
+.bg .good-content .good-content-title .good-content-info .good-price > p:nth-of-type(1) {
+  color: red;
+  font-size: 3.3333333333vw;
+  margin-right: 5vw;
+}
+.bg .good-content .good-content-title .good-content-info .good-price > p:nth-of-type(1) > span {
+  font-size: 6vw;
+}
+.bg .good-content .good-content-title .good-content-info .good-price > p:nth-of-type(2) {
+  text-decoration: line-through;
+  color: #878c9a;
+  font-size: 4vw;
+}
+.bg .good-pinjia .pinjia-title {
+  height: 10.6666666667vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg .good-pinjia .pinjia-title .p-t-t {
+  font-size: 4.6666666667vw;
+}
+.bg .good-pinjia .pinjia-title .all {
+  color: #c5c9d2;
+  font-size: 3.3333333333vw;
+}
+.bg .good-pinjia .pinjia-content {
+  display: flex;
+}
+.bg .good-pinjia .pinjia-content > a {
+  margin-right: 3vw;
+}
+.bg .good-pinjia .pinjia-content > a > img {
+  width: 8vw;
+}
+.bg .good-pinjia .pinjia-content > div {
+  display: flex;
+  flex-direction: column;
+}
+.bg .good-pinjia .pinjia-content > div .tou-title {
+  font-size: 4vw;
+  margin-bottom: 1.5vw;
+}
+.bg .good-pinjia .pinjia-content > div > p {
+  color: #878c9a;
+  font-size: 3.3333333333vw;
+}
+.bg .content-img > img {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+.bg .content-img > div {
+  height: 13.3333333333vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg .content-img > div > p {
+  font-size: 4.6666666667vw;
+}
+.bg .content-img > div .juxing {
+  margin: 0 2vw;
+  height: 0.5vw;
+  width: 5vw;
+  background-color: #c5c9d2;
+}
+.bg .guwen-content {
+  top: 106vw;
+}
+.bg .guwen-content > div .guwen-title {
+  margin-top: 3vw;
+  height: 9.3333333333vw;
+  line-height: 9.3333333333vw;
+  font-size: 4.6666666667vw;
+  font-weight: bold;
+}
+.bg .guwen-content > div > div > p {
+  text-indent: 1em;
+  color: #878c9a;
+  font-size: 3.6vw;
+  margin-bottom: 4vw;
+}
+.bg .guwen-content .tele {
+  color: #FFFFFF;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+  background-color: #0f9cff;
+  font-size: 3.6vw;
+  width: 100%;
+  height: 12vw;
+}
+.bg .guwen-content .tele > img {
+  width: 3.7333333333vw;
+  margin-right: 1.5vw;
+}
+
+/*# sourceMappingURL=14-good.css.map */

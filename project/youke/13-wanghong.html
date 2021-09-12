@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="scss/reset.css"/>
+		<link rel="stylesheet" href="scss/13-wanghong.css">
+		<link rel="stylesheet" href="fonts/01-fonts/iconfont.css">
+	</head>
+	<body>
+		<div class="bg">
+			<div class="html-title width95">
+				<a href="11-hotbang.html"><p class="back">&lt;</p></a>
+			</div>
+			<div class="wanghong-title width95">
+				<a href=""><img src="images/01-index/01-hotbang-1.png" ></a>
+				<div class="wanghong-title-main">
+					<div>
+						<a href=""><p>你的小可爱</p></a>
+						<img class="none" src="images/02-login/13-man.png" />
+						<img src="images/02-login/13-woman.png" />
+					</div>
+					<p>搞笑博主</p>
+					<p>抖音号hka1994</p>
+				</div>
+			</div>
+			<div class="wanghong-nav">
+				<div class="group ">
+					<p class="black">30.2w</p>
+					<p>粉丝数</p>
+					<div class="group1 red">
+						<p>6256</p>
+						<p class="iconfont icon-jiantoushangsheng"></p>
+						<p class=" iconfont icon-jiantouxiajiang"></p>
+					</div>
+				</div>
+				<div class="group ">
+					<p class="black">30.2w</p>
+					<p>点赞数</p>
+					<div class="group1 red">
+						<p>6256</p>
+						<p class="iconfont icon-jiantoushangsheng"></p>
+						<p class=" iconfont icon-jiantouxiajiang"></p>
+					</div>
+				</div>
+				<div class="group ">
+					<p class="black">30.2w</p>
+					<p>评论数</p>
+					<div class="group1 green">
+						<p>6256</p>
+						<p class="iconfont icon-jiantoushangsheng"></p>
+						<p class=" iconfont icon-jiantouxiajiang"></p>
+					</div>
+				</div>
+				<div class="group">
+					<p class="black">30.2w</p>
+					<p>转发数</p>
+					<div class="group1 red">
+						<p>6256</p>
+						<p class="iconfont icon-jiantoushangsheng"></p>
+						<p class="iconfont icon-jiantouxiajiang"></p>
+					</div>
+				</div>
+			</div>
+			<div class="wanghong-info width95">
+				<div class="info-title ">
+					<p class="l">个人简介</p>
+					<div class="r hidden">
+						<div class="r-l">
+							<p class="r-l-blue"></p>
+							<p>总量</p>
+						</div>
+						<div class="r-r">
+							<p class="r-r-orange"></p>
+							<p>增量</p>
+						</div>
+					</div>
+				</div>
+				<div class="info-main width95">
+					1987年3月10日出生于北京市，中国内地影视女演员、影视出品人。
+					2002年，考入北学习。2004年，
+					因在爱情剧《月影风荷》中饰演女主角叶风荷而踏入演艺圈。
+					2010年，凭借仙侠剧《仙剑奇侠传三》受到更多关注。
+					2011年，因在宫廷剧《步步惊心》中饰演马尔泰若曦而赢得颇高人气，
+					并获得第十八届上海电视节白玉兰奖最具人气女演员奖。
+				</div>
+			</div>
+			<div class="hr-gray"></div>
+			<div class="wanghong-tu width95">
+				<div class="info-title">
+					<p class="l">作品分析</p>
+					<div class="r">
+						<div class="r-l">
+							<p class="r-l-blue"></p>
+							<p>总量</p>
+						</div>
+						<div class="r-r">
+							<p class="r-r-orange"></p>
+							<p>增量</p>
+						</div>
+					</div>
+				</div>
+				<div class="tu-main">
+					<canvas id="canvas" width="680" height="360"></canvas>
+					<div class="tu-nav">
+						<p class="active">粉丝数</p>
+						<p>获赞数</p>
+						<p>评论数</p>
+						<p>转发数</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			let canvas=document.getElementById('canvas');
+			let ctx=canvas.getContext('2d');
+			ctx.font="20px Arial";
+			ctx.fillText("总量",10,40);
+			ctx.fillText("增量",630,40);
+			
+			ctx.font="15px Arial";
+			ctx.fillStyle="#878c9a";
+			ctx.fillText("250w",0,70);
+			ctx.fillText("200w",0,130);
+			ctx.fillText("150w",0,190);
+			ctx.fillText("100w",0,250);
+			ctx.fillText("50w",0,310);
+			ctx.fillText("150w",640,70);
+			ctx.fillText("100w",640,130);
+			ctx.fillText("50w",640,190);
+			ctx.fillText("10w",640,250);
+			ctx.fillText("6w",640,310);
+			
+			//坐标轴
+			ctx.lineWidth="1";
+			//横线
+			ctx.strokeStyle="#999";
+			for(let i=0;i<5;i++){
+				ctx.moveTo(60,63+60*i);
+				ctx.lineTo(610,63+60*i);
+			}
+			ctx.stroke();
+			ctx.fillText("06.03",60,330);
+			ctx.fillText("06.03",165,330);
+			ctx.fillText("06.03",270,330);
+			ctx.fillText("06.03",375,330);
+			ctx.fillText("06.03",480,330);
+			ctx.fillText("06.03",585,330);
+			
+			ctx.beginPath();
+			ctx.strokeStyle="#0f9cff";
+			ctx.lineWidth="3";
+			//折线
+			ctx.moveTo(60,95);
+			ctx.lineTo(165,110);
+			ctx.lineTo(270,200);
+			ctx.lineTo(375,170);
+			ctx.lineTo(480,250);
+			ctx.lineTo(585,230);
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.strokeStyle="#ff7d43";
+			ctx.lineWidth="3";
+			ctx.moveTo(60,177);
+			ctx.lineTo(165,137);
+			ctx.lineTo(270,247);
+			ctx.lineTo(375,135);
+			ctx.lineTo(480,150);
+			ctx.lineTo(585,267);
+			ctx.stroke();
+		</script>
+	</body>
+</html>

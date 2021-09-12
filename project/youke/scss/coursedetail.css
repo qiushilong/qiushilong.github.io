@@ -1,0 +1,170 @@
+@charset "UTF-8";
+* {
+  font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+  box-sizing: border-box; }
+
+body {
+  min-width: 320px; }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2707884 */
+  src: url("../fonts/17-fonts/iconfont.woff") format("woff2"), url("../fonts/17-fonts/iconfont.woff2") format("woff"), url("../fonts/17-fonts/iconfont.ttf") format("truetype"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.main {
+  width: 95%;
+  margin: 0 auto; }
+
+.title {
+  width: 100%;
+  height: 15.4rem;
+  background: url(../images/22-bg.png) no-repeat;
+  background-size: 100vw;
+  position: relative; }
+  .title .main {
+    display: flex;
+    position: relative;
+    z-index: 1; }
+    .title .main a {
+      position: absolute;
+      display: flex;
+      width: .3rem;
+      height: 1.6rem;
+      align-items: center;
+      margin-left: .2rem;
+      font-size: .56rem;
+      color: #fff; }
+    .title .main h1 {
+      flex: 1;
+      font-size: .64rem;
+      line-height: 1.6rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
+  .title .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); }
+  .title .bf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.36rem; }
+
+.content {
+  width: 100%;
+  border-radius: .5rem;
+  transform: translate(0, -0.6rem);
+  background-color: #fff;
+  padding-top: .6rem; }
+  .content .top {
+    height: 4rem; }
+    .content .top h1 {
+      font-size: .64rem;
+      font-weight: 700; }
+    .content .top > div {
+      margin-top: .4rem; }
+    .content .top .row1 {
+      display: flex;
+      align-items: center; }
+      .content .top .row1 .headshot {
+        display: inline-block;
+        width: .72rem;
+        height: .7rem;
+        border-radius: 50%;
+        overflow: hidden; }
+        .content .top .row1 .headshot img {
+          width: 1rem; }
+      .content .top .row1 span {
+        font-size: .44rem;
+        color: #363E50; }
+      .content .top .row1 .sz {
+        margin-left: 1.8rem; }
+    .content .top .row2 {
+      display: flex;
+      align-items: center; }
+      .content .top .row2 span {
+        font-size: .44rem;
+        color: #878C9A; }
+      .content .top .row2 div {
+        width: 1.84rem;
+        height: .64rem;
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+        background-color: #ffe8ec; }
+        .content .top .row2 div span {
+          color: #FE1A46; }
+  .content .split {
+    height: .4rem;
+    background-color: #f9fbfc; }
+  .content .bottom img {
+    width: 100%; }
+
+.start_learn {
+  width: 95%;
+  position: fixed;
+  bottom: .4rem;
+  left: 50%;
+  transform: translate(-50%);
+  height: 1.72rem;
+  border-radius: 1.72rem;
+  background-color: #0F9CFF;
+  text-align: center;
+  line-height: 1.72rem; }
+  .start_learn a {
+    color: #fff;
+    font-size: .56rem; }
+
+.model {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .model .model_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12rem;
+    height: 7.4rem;
+    background-color: #fff; }
+    .model .model_container h1 {
+      text-align: center;
+      font-size: .76rem;
+      margin-top: 1.4rem; }
+    .model .model_container p {
+      text-align: center;
+      font-size: .56rem;
+      color: #ABB1BC;
+      margin: .6rem 0 1rem; }
+    .model .model_container .choose {
+      display: flex;
+      justify-content: space-around; }
+      .model .model_container .choose .cancle, .model .model_container .choose .ok {
+        width: 5rem;
+        height: 1.8rem;
+        background-color: #cbcdd2;
+        color: #fff;
+        font-size: .64rem;
+        line-height: 1.8rem;
+        text-align: center;
+        border-radius: 0.9rem; }
+      .model .model_container .choose .ok {
+        background-color: #0f9cff; }
+
+/*# sourceMappingURL=coursedetail.css.map */

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-提现</title>
+    <link rel="stylesheet" href="scss/55-tixian.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="52-myWallet.html" class="left-arrow-noPosition"></a>
+        <p class="title">提现</p>
+        <a href="#">提现记录</a>
+    </div>
+</header>
+<section class="content">
+    <div class="up">
+        <div class="in">
+            <p class="info">提现金额</p>
+            <p class="max">￥<span>最多可提现960.00元</span></p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="b-up">
+            <div class="b-up-in">
+                <p class="title">提现方式</p>
+                <div class="method">
+                    <div class="left">
+                        <img src="images/35-weixin.png" alt="">
+                        <label for="weixin">微信支付</label>
+                    </div>
+                    <input type="radio" name="pay" id="weixin" checked="checked">
+                </div>
+                <div class="method">
+                    <div class="left">
+                        <img src="images/35-zhifubao.png" alt="">
+                        <label for="zfb">支付宝支付</label>
+                    </div>
+                    <input type="radio" name="pay" id="zfb">
+                </div>
+                <div class="careful">
+                    <p class="title">注意事项</p>
+                    <ol>
+                        <li>提供其他平台经营信息：包括平台名称、网店地址、最近一年销售额</li>
+                        <li>提供产品信息情况：包括主要商品类型、可网售商品数量</li>
+                        <li>备注自身实力情况：个人注册需要简要说明自身亮点；企业注册需要注明公司类型(工厂型或贸易型)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="down-in">
+                立即提现
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    window.onload=function (){
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+</body>
+</html>

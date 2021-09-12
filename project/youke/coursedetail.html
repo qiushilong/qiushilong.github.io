@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/coursedetail.min.css">
+</head>
+
+<body>
+    <header class="title">
+        <div class="main">
+            <a href="coursechapter.html" class="iconfont">
+                &#xe646;
+            </a>
+            <h1>
+                课程详情
+            </h1>
+        </div>
+        <div class="shadow"></div>
+        <span class="iconfont bf">&#xe61a;</span>
+    </header>
+
+    <section class="content">
+        <div class="top main">
+            <h1>
+                第一章：网络流量时代的主流市场
+            </h1>
+            <div class="row1">
+                <span class="headshot">
+                    <img src="./images/20-t1.png" alt="">
+                </span>
+                <span>主讲人:丸子老师</span>
+                <span class="iconfont sz">&#xe641;</span>
+                <span>36分钟</span>
+            </div>
+            <div class="row2">
+                <span class="iconfont">&#xe61a;</span>
+                <span>3265人浏览</span>
+                <div>
+                    <span class="iconfont ax">&#xe743;</span>
+                    <span>收藏</span>
+                </div>
+            </div>
+        </div>
+        <div class="split"></div>
+        <div class="bottom">
+            <img src="./images/22-bg.png" alt="">
+        </div>
+    </section>
+
+    <section class="start_learn">
+        <a href="javascript:void(0)" ;>开始学习</a>
+    </section>
+
+    <!-- 模态框 -->
+    <div class="model">
+        <div class="model_container">
+            <h1>温馨提示</h1>
+            <p>课程为会员才能学习，请升级成为会员！</p>
+            <div class="choose">
+                <div class="cancle">取消</div>
+                <div class="ok">成为会员</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+    <script>
+        let start_learn = document.querySelector('.start_learn');
+        let model = document.querySelector('.model');
+        let cancle = document.querySelector('.model .cancle');
+
+        start_learn.onclick = function () {
+            model.style.display = 'block';
+        }
+
+        cancle.onclick = function () {
+            model.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

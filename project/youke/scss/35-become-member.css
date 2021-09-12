@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* CSS reset */
+html {
+  color: #000;
+  background: #FFF;
+  font-family: Arial,'Microsoft YaHei','宋体'; }
+
+/*清除默认的内边距和外边距等*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, strong {
+  padding: 0;
+  margin: 0;
+  font-family: 'Microsoft YaHei',Arial,'宋体'; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*清除默认边框*/
+fieldset, img {
+  border: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none; }
+
+/*此处待添加默认链接颜色*/
+var, em, strong {
+  font-style: normal; }
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit; }
+
+del, ins {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+/*清除默认的字体大小和文字粗细*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: baseline; }
+
+sub {
+  vertical-align: baseline; }
+
+legend {
+  color: #000; }
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+input, button, textarea, select {
+  *font-size: 100%; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none; }
+
+/*去除移动端点击事件出现的背景框*/
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*清除浮动*/
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both; }
+
+/*清除浮动的兼容IE*/
+.clearfix {
+  *zoom: 1; }
+
+.right-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(45deg);
+  border-right: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.left-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(-45deg);
+  border-left: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.bottom-solid-triangle {
+  border-top: 0.1rem solid #0D182E;
+  border-left: 0.1rem  solid transparent;
+  border-right: 0.1rem  solid transparent; }
+
+.border {
+  border: none !important;
+  position: relative; }
+  .border:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #F9F9FB;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+html {
+  font-size: 13.3333333333vw; }
+
+.header {
+  background-color: #fff; }
+  .header .head-in {
+    height: 1.14rem;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .header .head-in .left-arrow-noPosition {
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: #0D182E; }
+    .header .head-in p {
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 0.32rem;
+      color: #0D182E;
+      font-weight: bold; }
+
+.scroll-content {
+  overflow: auto; }
+  .scroll-content .banner img {
+    width: 100%; }
+  .scroll-content .footer {
+    border-color: #FFFFFF; }
+    .scroll-content .footer .footer-in {
+      width: 95%;
+      margin: 0 auto; }
+      .scroll-content .footer .footer-in .up {
+        display: flex;
+        justify-content: space-between; }
+        .scroll-content .footer .footer-in .up div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.1rem;
+          width: 2.12rem;
+          height: 1.6rem; }
+          .scroll-content .footer .footer-in .up div p {
+            font-size: 0.24rem; }
+          .scroll-content .footer .footer-in .up div .price {
+            font-size: 26px; }
+            .scroll-content .footer .footer-in .up div .price .num {
+              font-size: 0.46rem;
+              font-weight: bold; }
+        .scroll-content .footer .footer-in .up .div1 {
+          color: #ECAC00;
+          background-color: #fff6d1; }
+        .scroll-content .footer .footer-in .up .div2 {
+          color: #10A3F8;
+          background-color: #DEEFFE; }
+        .scroll-content .footer .footer-in .up .div3 {
+          color: #EF781D;
+          background-color: #FFE9D1; }
+      .scroll-content .footer .footer-in .bottom .sure {
+        margin-top: 0.4rem;
+        background-color: #DFB348;
+        width: 100%;
+        height: 0.86rem;
+        font-size: 0.28rem;
+        color: #fff;
+        line-height: 0.86rem;
+        text-align: center;
+        border-radius: 0.43rem; }
+      .scroll-content .footer .footer-in .bottom .tiao-kuan {
+        display: flex;
+        align-items: center;
+        margin: 0.25rem 0 0.34rem 0;
+        height: 0.23rem;
+        font-size: 0.24rem;
+        color: #979BA6; }
+        .scroll-content .footer .footer-in .bottom .tiao-kuan span {
+          margin-left: 0.10rem;
+          color: #DFB348; }
+        .scroll-content .footer .footer-in .bottom .tiao-kuan input {
+          border-radius: 50%;
+          margin-right: 0.18rem;
+          width: 0.3rem;
+          height: 0.3rem; }
+
+.chong-zhi {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5; }
+  .chong-zhi .content {
+    background-color: #FBFBFC;
+    position: absolute;
+    height: 4.34rem;
+    width: 100%;
+    bottom: 0;
+    z-index: 6; }
+    .chong-zhi .content h3 {
+      background-color: #fff;
+      font-weight: bold;
+      text-align: center;
+      color: #151F38;
+      font-size: 0.26rem;
+      line-height: 0.35rem; }
+    .chong-zhi .content .method {
+      background-color: #fff;
+      box-sizing: border-box;
+      border-bottom: 1px solid #EFF1F6;
+      height: 0.95rem;
+      width: 100%;
+      padding: 0 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .chong-zhi .content .method p {
+        display: flex;
+        align-items: center; }
+        .chong-zhi .content .method p img {
+          margin-right: 0.16rem;
+          width: 0.4rem; }
+        .chong-zhi .content .method p label {
+          color: #1E2138;
+          font-size: 0.26rem; }
+      .chong-zhi .content .method input {
+        width: 0.38rem;
+        height: 0.38rem; }
+    .chong-zhi .content .cancel {
+      background-color: #FFFFFF;
+      height: 0.94rem;
+      margin-top: 0.2rem;
+      font-size: 0.3rem;
+      line-height: 0.94rem;
+      text-align: center;
+      font-weight: bold; }
+    .chong-zhi .content:before {
+      content: "";
+      display: flex;
+      position: absolute;
+      height: 0.39rem;
+      width: 100%;
+      background-color: #FFFFFF;
+      border-radius: 0.3rem 0.3rem 0 0;
+      top: -0.39rem; }
+
+/*# sourceMappingURL=35-become-member.css.map */

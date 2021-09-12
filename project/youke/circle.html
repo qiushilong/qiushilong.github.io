@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>圈子</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/circle.min.css">
+    <link rel="stylesheet" href="./scss/footer.css">
+</head>
+
+<body>
+
+    <section class="content">
+        <img src="./images/24-bg.png" alt="">
+        <p>程序猿努力码字中...</p>
+    </section>
+
+    <div class="footer">
+        <div>
+            <a href="01-index.html">
+                <p class="iconfont icon-shouye"></p>
+                <p >首页</p>
+            </a>
+        </div>
+        <div>
+            <a href="16-chadata.html">
+                <p class="iconfont icon-chakan"></p>
+                <p>查数据</p>
+            </a>
+        </div>
+        <div>
+            <a href="courselearn.html">
+                <p class="iconfont icon-biaoqiankuozhan_kecheng-147"></p>
+                <p>课程教学</p>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)">
+                <p class="iconfont icon-quanzi1 active"></p>
+                <p class="active">圈子</p>
+            </a>
+        </div>
+        <div>
+            <a href="me.html">
+                <p class="iconfont icon-biaoqianA01_wode-30"></p>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+</body>
+
+</html>

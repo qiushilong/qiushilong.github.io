@@ -1,0 +1,69 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.search-content .search-content-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vw;
+}
+.search-content .search-content-banner > a > p.back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000;
+  font-size: 6vw;
+}
+.search-content .search-content-banner .search {
+  width: 85%;
+  height: 8.8vw;
+  border-radius: 2vw;
+  background-color: #F5F6FA;
+  display: flex;
+  align-items: center;
+}
+.search-content .search-content-banner .search > img {
+  margin-left: 3vw;
+  margin-right: 2vw;
+  width: 3.74vw;
+}
+.search-content .search-content-banner .search > input {
+  width: 84%;
+  font-size: 3.74vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.search-content .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.3333333333vw;
+}
+.search-content .title > p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+.search-content .title > img {
+  width: 3.6vw;
+  height: 3.6vw;
+}
+.search-content .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-content .main > a > p {
+  margin-top: 3.3333333333vw;
+  margin-bottom: 3.3333333333vw;
+  margin-left: 2vw;
+  line-height: 9.3333333333vw;
+  padding: 0 3vw;
+  font-size: 4vw;
+  border-radius: 6vw;
+  background-color: #F5F6FA;
+  color: #000;
+}
+
+/*# sourceMappingURL=06-search.css.map */

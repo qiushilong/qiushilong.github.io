@@ -1,0 +1,87 @@
+/* 样式重置 */
+@import "reset";
+ // 基础代码,原子类
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+body,html{
+	height: 100%;
+	font-size:(100vw/7.5);
+}
+body{
+	font-size: 0.26rem;
+	font-family: PingFang;
+	background-color: #F7F8FA;
+	width: 100%;
+	margin: 0 auto;
+}
+// 自己的业务代码
+
+	// 顶部
+	.top{
+		width: 100%;
+		height: 1.8rem;
+		background-color: #FFFFFF;
+		padding: 1rem 0 0.22rem 0;			
+		
+		.title{
+			width: 95%;
+			margin: 0 auto;
+			display: flex;
+		    justify-content: space-between;
+			span{
+			text-align: center;
+			color: #222222;
+			font-size: 0.32rem;	
+		    }
+		}
+		
+	}
+	
+	
+	
+	// 中间内容
+	.content{
+		width: 95%;
+		height: 8.4rem;
+		margin: 0.24rem auto;
+		background-color: #FFFFFF;
+		padding-top: 0.4rem;
+		.logo{
+			width: 1.4rem;
+			height: 1.4rem;
+			background-color: #0F9CFF;
+			border-radius: 0.2rem;
+			margin: 0 auto 0.4rem;
+			
+			
+		}
+		.list{
+			ul{
+				li{
+					margin: 0 0.2rem;
+					border-bottom: 1px solid #F0F2F6;
+					line-height: 0.64rem;
+					display: flex;
+					justify-content: space-between;
+					sapn{
+						
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+

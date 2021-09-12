@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-修改昵称</title>
+    <link rel="stylesheet" href="scss/58-modify-name.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="57-personFile.html" class="left-arrow-noPosition"></a>
+        <p class="title">修改昵称</p>
+    </div>
+</header>
+<section class="content">
+    <div class="c-u">
+        <div class="new-name">
+            <textarea autofocus="autofocus" maxlength="10" rows="1">小丸子吃樱桃
+</textarea>
+            <div class="cancel" title="清除"><img src="images/58-delete.png" alt=""></div>
+        </div>
+        <p class="tip">请填写6~10字昵称~</p>
+    </div>
+    <div class="button">
+        <div class="sure">
+            提交
+        </div>
+    </div>
+</section>
+<script>
+    window.onload=function (){
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+</body>
+</html>

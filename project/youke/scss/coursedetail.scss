@@ -1,0 +1,209 @@
+// inphone6 按1rem=50px来算，2倍稿不用除2
+
+*{
+    font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 2707884 */
+    src: url('../fonts/17-fonts/iconfont.woff') format('woff2'),
+         url('../fonts/17-fonts/iconfont.woff2') format('woff'),
+         url('../fonts/17-fonts/iconfont.ttf') format('truetype');
+}
+  
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title{
+    width: 100%;
+    height: 15.4rem;
+    background: url(../images/22-bg.png) no-repeat;
+    background-size: 100vw;
+    position: relative;
+    .main{
+        // height: 1.6rem;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        a{
+            position: absolute;
+            display: flex;
+            width: .3rem;
+            height: 1.6rem;
+            align-items: center;
+            margin-left: .2rem;
+            font-size: .56rem;
+            color: #fff;
+        }
+        h1{
+            flex: 1;
+            font-size: .64rem;
+            line-height: 1.6rem; 
+            text-align: center;  
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+    .shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 14rem;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
+    }
+    .bf{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 1.36rem;
+    }
+}
+
+.content{
+    width: 100%;
+    border-radius: .5rem;
+    transform: translate(0,-0.6rem);
+    background-color: #fff;
+    padding-top: .6rem;
+    .top{
+        height: 4rem;
+        h1{
+            font-size: .64rem;
+            font-weight: 700;
+        }
+        >div{
+            margin-top: .4rem;
+        }
+        .row1{
+            display: flex;
+            align-items: center;
+            .headshot{
+                display: inline-block;
+                width: .72rem;
+                height: .7rem;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 1rem;
+                }
+            }
+            span{
+                font-size: .44rem;
+                color: #363E50;
+            }
+            .sz{
+                margin-left: 1.8rem;
+            }
+        }
+        .row2{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: .44rem;
+                color: #878C9A;
+            }
+            div{
+                width: 1.84rem;
+                height: .64rem;
+                display: flex;
+                align-items: center;
+                margin-left: 3rem;
+                background-color: #ffe8ec;
+                span{
+                    color: #FE1A46;
+                }
+            }
+        }
+    }
+    .split{
+        height: .4rem;
+        background-color:#f9fbfc;
+    }
+    .bottom{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.start_learn{
+    width: 95%;
+    position: fixed;
+    bottom: .4rem;
+    left: 50%;
+    transform: translate(-50%);
+    height: 1.72rem;
+    border-radius: 1.72rem;
+    background-color: #0F9CFF;
+    text-align: center;
+    line-height: 1.72rem;
+    a{
+        color: #fff;
+        font-size: .56rem;
+    }
+}
+
+.model{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .3);
+    .model_container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 12rem;
+        height: 7.4rem;
+        background-color: #fff;
+        h1{
+            text-align: center;
+            font-size: .76rem;
+            margin-top: 1.4rem;
+        }
+        p{
+            text-align: center;
+            font-size: .56rem;
+            color: #ABB1BC;
+            margin: .6rem 0 1rem;
+        }
+        .choose{
+            display: flex;
+            justify-content: space-around;
+            .cancle,.ok{
+                width: 5rem;
+                height: 1.8rem;
+                background-color: #cbcdd2;
+                color: #fff;
+                font-size: .64rem;
+                line-height: 1.8rem;
+                text-align: center;
+                border-radius: 0.9rem;
+            }
+            .ok{
+                background-color: #0f9cff;
+            }
+        }
+    }
+}

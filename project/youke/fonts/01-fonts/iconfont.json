@@ -1,0 +1,72 @@
+{
+  "id": "2707231",
+  "name": "youke-footer",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "689254",
+      "name": "箭头 下降",
+      "font_class": "jiantouxiajiang",
+      "unicode": "e7f2",
+      "unicode_decimal": 59378
+    },
+    {
+      "icon_id": "551962",
+      "name": "箭头",
+      "font_class": "arrow-right",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "689253",
+      "name": "箭头 上升",
+      "font_class": "jiantoushangsheng",
+      "unicode": "e7f1",
+      "unicode_decimal": 59377
+    },
+    {
+      "icon_id": "810220",
+      "name": "箭头",
+      "font_class": "jiantou-copy",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "4328952",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "5532898",
+      "name": "圈子",
+      "font_class": "quanzi1",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "16376904",
+      "name": "我的",
+      "font_class": "biaoqianA01_wode-30",
+      "unicode": "eaa8",
+      "unicode_decimal": 60072
+    },
+    {
+      "icon_id": "16386477",
+      "name": "课程",
+      "font_class": "biaoqiankuozhan_kecheng-147",
+      "unicode": "eb0b",
+      "unicode_decimal": 60171
+    },
+    {
+      "icon_id": "20104477",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}

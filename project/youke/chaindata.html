@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=1,maximum=1.0,minimum=1.0">
+    <title>供应链数据</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/chaindata.min.css">
+</head>
+
+<body>
+    <header class="title main">
+        <a href="01-index.html" class="iconfont">
+            &#xe646;
+        </a>
+        <h1>
+            供应链数据
+        </h1>
+    </header>
+
+    <section class="search main">
+        <span class="iconfont">&#xe623;</span>
+        <input type="text" placeholder="搜索你想找的~">
+    </section>
+
+    <nav class="nav main">
+        <ul>
+            <li class="active">爆款推荐</li>
+            <li>素材库列表</li>
+        </ul>
+    </nav>
+
+    <section class="content main">
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>商品来源</th>
+                <th>商品信息</th>
+                <th>优惠面额</th>
+                <th>类目</th>
+                <th>售价</th>
+            </tr>
+            <tr>
+                <td class="jp"><img src="./images/18-jp1.png" alt=""></td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink1.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td class="jp"><img src="./images/18-jp2.png" alt=""></td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink2.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td class="jp"><img src="./images/18-jp3.png" alt=""></td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">4</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">5</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">6</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">7</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">8</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">9</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nojp">10</div>
+                </td>
+                <td>抖音</td>
+                <td class="product_img">
+                    <div>
+                        <img src="./images/19-drink3.png" alt="">
+                    </div>
+                </td>
+                <td class="price">￥6.5</td>
+                <td>饮品</td>
+                <td class="price">￥6</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+</body>
+
+</html>

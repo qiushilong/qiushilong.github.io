@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>我的</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/me.min.css">
+    <link rel="stylesheet" href="./scss/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="pic">
+                <img src="./images/33-headshot.png" alt="">
+            </div>
+            <div class="msg">
+                <span class="name">小丸子吃樱桃，早上好</span>
+                <span class="id">ID：2356236</span>
+            </div>
+        </div>
+        <a href="./idcheck.html" class="right">
+            <span class="iconfont">&#xe657;</span>
+            身份认证
+            <span class="iconfont fx">&#xe646;</span>
+        </a>
+    </header>
+
+    <section class="content">
+        <ul>
+            <li>
+                <a href="35-become-member.html" class="activity">
+                    <img src="./images/33-activity.png" alt="">
+                </a>
+            </li>
+
+            <li>
+                <div class="main">
+                    <h1>我的收藏</h1>
+                    <div class="sc">
+                        <a href="42-kecheng.html">
+                            <img src="./images/33-course.png" alt="">
+                            <p>课程收藏</p>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <img src="./images/33-content.png" alt="">
+                            <p>内容收藏</p>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <img src="./images/33-sc.png" alt="">
+                            <p>素材收藏</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <ul class="more">
+                    <li>
+                        <a href="45-yaoqinfriends.html">
+                            <span class="iconfont">&#xe666;</span>
+                            <p>我的邀请</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="47-youhuiquan.html">
+                            <span class="iconfont">&#xe6a3;</span>
+                            <p>我的优惠劵</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="iconfont">&#xe681;</span>
+                            <p>浏览记录</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="52-myWallet.html">
+                            <span class="iconfont">&#xe654;</span>
+                            <p>我的钱包</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="more">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="iconfont">&#xe629;</span>
+                            <p>客服服务</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="59-systemsetting.html">
+                            <span class="iconfont">&#xe604;</span>
+                            <p>系统设置</p>
+                        </a>
+                    </li>
+                </ul>
+                <section class="exit">
+                    <a href="javascript:void(0)" ;>退出登录</a>
+                </section>
+            </li>
+        </ul>
+
+    </section>
+
+    <div class="footer">
+        <div>
+            <a href="01-index.html">
+                <p class="iconfont icon-shouye"></p>
+                <p >首页</p>
+            </a>
+        </div>
+        <div>
+            <a href="16-chadata.html">
+                <p class="iconfont icon-chakan"></p>
+                <p>查数据</p>
+            </a>
+        </div>
+        <div>
+            <a href="courselearn.html">
+                <p class="iconfont icon-biaoqiankuozhan_kecheng-147"></p>
+                <p>课程教学</p>
+            </a>
+        </div>
+        <div>
+            <a href="circle.html">
+                <p class="iconfont icon-quanzi1 "></p>
+                <p >圈子</p>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)">
+                <p class="iconfont icon-biaoqianA01_wode-30 active"></p>
+                <p class="active">我的</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+</body>
+
+</html>

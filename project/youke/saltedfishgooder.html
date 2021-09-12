@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>课程教学</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/saltedfishgooder.min.css">
+</head>
+
+<body>
+
+    <header class="title main">
+        <a href="01-index.html" class="iconfont">
+            &#xe646;
+        </a>
+        <h1>
+            咸鱼达人
+        </h1>
+    </header>
+
+    <section class="search main">
+        <span class="iconfont">&#xe623;</span>
+        <input type="text" placeholder="搜索你喜欢的~">
+    </section>
+
+    <section class="banner main">
+        <div class="pic">
+            <a href="javascript:void(0);">
+                <img src="./images/24-banner.png" alt="">
+            </a>
+        </div>
+        <ul class="dots">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section class="creater main">
+        <p>#假如林有有遇上洪世贤# 绿茶遇到渣男哈哈哈哈哈哈哈哈哈哈哈哈 ！终于剪好了！ ​</p>
+        <a href="javascript:void(0);">一键<br />生成</a>
+    </section>
+
+    <nav class="nav main">
+        <ul>
+            <li class="active">全部</li>
+            <li>抖音养号</li>
+            <li>视频剪辑</li>
+            <li>涨粉引流</li>
+            <li>美妆护肤</li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <ul class="main">
+            <li>
+                <div class="top">
+                    <div class="pic">
+                        <img src="./images/24-kh.png" alt="">
+                    </div>
+                    <div class="msg">
+                        <h1>YSL新出的口红色号</h1>
+                        <p>1981年9月16日出生于山东青岛，华语影视女演员、制片人、歌手，毕业于上海...</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn">
+                        一键领取
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="pic">
+                        <img src="./images/24-kh2.png" alt="">
+                    </div>
+                    <div class="msg">
+                        <h1>YSL新出的口红色号</h1>
+                        <p>1981年9月16日出生于山东青岛，华语影视女演员、制片人、歌手，毕业于上海...</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn">
+                        一键领取
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="pic">
+                        <img src="./images/24-kh.png" alt="">
+                    </div>
+                    <div class="msg">
+                        <h1>YSL新出的口红色号</h1>
+                        <p>1981年9月16日出生于山东青岛，华语影视女演员、制片人、歌手，毕业于上海...</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btn">
+                        一键领取
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 模态框 -->
+    <div class="model model1">
+        <div class="model_container">
+            <h1>温馨提示</h1>
+            <p>是否下载该内容？</p>
+            <div class="choose">
+                <div class="cancle">取消</div>
+                <div class="ok">下载</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="model model2">
+        <div class="model_container">
+            <h1>温馨提示</h1>
+            <p>该功能需开通会员才能使用~</p>
+            <img src="./images/26-img.png" alt="">
+            <div class="choose">
+                <div class="cancle">再想想</div>
+                <div class="ok">去开通</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="model model3">
+        <div class="model_container">
+            <h1>温馨提示</h1>
+            <p>亲亲，您的使用次数已达上限 请明日再来~~</p>
+            <div class="choose">
+                <div class="ok">知道了</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+
+    <script>
+        let down = document.querySelector('.creater a');
+        let model1 = document.querySelector('.model1');
+        let cancle1 = document.querySelector('.model1 .cancle');
+        let ok1 = document.querySelector('.model1 .ok');
+
+        let model2 = document.querySelector('.model2');
+        let cancle2 = document.querySelector('.model2 .cancle');
+
+        let btn = document.querySelector('.content .btn');
+        let model3 = document.querySelector('.model3');
+        let ok3 = document.querySelector('.model3 .ok');
+
+        down.onclick = function () {
+            model1.style.display = 'block';
+        }
+
+        cancle1.onclick = function () {
+            model1.style.display = 'none';
+        }
+
+        ok1.onclick = function () {
+            model2.style.display = 'block';
+        }
+
+        cancle2.onclick = function () {
+            model2.style.display = 'none';
+        }
+
+        btn.onclick = function () {
+            model3.style.display = 'block';
+        }
+
+        ok3.onclick = function () {
+            model3.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

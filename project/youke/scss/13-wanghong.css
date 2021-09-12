@@ -1,0 +1,184 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hr-gray {
+  width: 100%;
+  height: 2.6666666667vw;
+  background: #f9fbfc;
+  margin-top: 2.5vw;
+  margin-bottom: 2.6666666667vw;
+}
+
+.bg {
+  background: url(../images/02-login/13-wanghong-bg.png) no-repeat;
+  background-position: right top;
+  background-size: 44vw 33.7333333333vw;
+  height: 300vw;
+}
+.bg .html-title {
+  height: 14.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg .html-title p {
+  font-size: 4.6666666667vw;
+  color: #000000;
+}
+.bg .wanghong-title {
+  display: flex;
+  align-items: center;
+  height: 24vw;
+}
+.bg .wanghong-title > a > img {
+  width: 17.3333333333vw;
+  height: 17.3333333333vw;
+  margin-right: 2vw;
+}
+.bg .wanghong-title .wanghong-title-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bg .wanghong-title .wanghong-title-main > div {
+  display: flex;
+  align-items: center;
+}
+.bg .wanghong-title .wanghong-title-main > div > a {
+  margin-right: 2vw;
+}
+.bg .wanghong-title .wanghong-title-main > div > a > p {
+  color: #171f34;
+  font-size: 3.4666666667vw;
+  font-weight: 550;
+  margin-bottom: 1vw;
+}
+.bg .wanghong-title .wanghong-title-main > div > img {
+  width: 3.6vw;
+  height: 3.6vw;
+}
+.bg .wanghong-title .wanghong-title-main > p {
+  color: #878c9a;
+  font-size: 2.9333333333vw;
+  margin-bottom: 1vw;
+}
+.bg .wanghong-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bg .wanghong-nav .group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bg .wanghong-nav .group > p:nth-of-type(1) {
+  color: #171f34;
+  font-size: 4.6666666667vw;
+}
+.bg .wanghong-nav .group > p:nth-of-type(2) {
+  color: #93979e;
+  font-size: 4vw;
+  height: 5.3333333333vw;
+  line-height: 5.3333333333vw;
+}
+.bg .wanghong-nav .group .group1 {
+  display: flex;
+  align-items: center;
+}
+.bg .wanghong-nav .group .group1 > p {
+  font-size: 3.3333333333vw;
+}
+.bg .wanghong-nav .group .red {
+  color: #fe1a46;
+}
+.bg .wanghong-nav .group .red > p:nth-of-type(3) {
+  display: none;
+}
+.bg .wanghong-nav .group .green {
+  color: #30f5a9;
+}
+.bg .wanghong-nav .group .green > p:nth-of-type(2) {
+  display: none;
+}
+.bg .info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13.3333333333vw;
+}
+.bg .info-title .l {
+  color: #171f34;
+  font-size: 6.6666666667vw;
+}
+.bg .info-title .r {
+  display: flex;
+  align-items: center;
+}
+.bg .info-title .r > div {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+}
+.bg .info-title .r > div > p:nth-of-type(1) {
+  width: 3.3333333333vw;
+  height: 2vw;
+}
+.bg .info-title .r > div > p:nth-of-type(2) {
+  margin-left: 1vw;
+  font-size: 4vw;
+}
+.bg .info-title .r > div .r-l-blue {
+  background-color: #0f9cff;
+}
+.bg .info-title .r > div .r-r-orange {
+  background-color: #ff7d43;
+}
+.bg .wanghong-info {
+  margin-top: 4vw;
+}
+.bg .wanghong-info .info-main {
+  margin-bottom: 4vw;
+  font-size: 3.3333333333vw;
+  line-height: 4.6666666667vw;
+  color: #878c9a;
+}
+.bg .wanghong-tu .tu-main {
+  margin: 0 auto;
+  width: 90.67vw;
+}
+.bg .wanghong-tu .tu-main #canvas {
+  width: 100%;
+  height: 48vw;
+}
+.bg .wanghong-tu .tu-main .tu-nav {
+  margin-top: 2.6666666667vw;
+  display: flex;
+  justify-content: center;
+}
+.bg .wanghong-tu .tu-main .tu-nav > p {
+  font-size: 4vw;
+  padding: 1.3333333333vw 4.6666666667vw;
+  border: 0.3vw solid #878c9a;
+}
+.bg .wanghong-tu .tu-main .tu-nav .active {
+  color: #0f9cff;
+  border-color: #0f9cff;
+}
+
+/*# sourceMappingURL=13-wanghong.css.map */

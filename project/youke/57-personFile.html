@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-个人资料</title>
+    <link rel="stylesheet" href="scss/57-mobileSelect.css">
+    <link rel="stylesheet" href="scss/57-personFile.css">
+</head>
+<body>
+<section class="upload">
+    <div class="load-c">
+        <p>拍照</p>
+        <p>相册</p>
+        <p class="button-cancel">取消</p>
+    </div>
+</section>
+<header class="header">
+    <div class="head-in">
+        <a href="59-systemsetting.html" class="left-arrow-noPosition"></a>
+        <p class="title">个人资料</p>
+    </div>
+</header>
+<section class="content">
+    <div class="head-p">
+        <div class="img">
+            <img src="images/59-head-picture.jpg" alt="">
+        </div>
+        <div class="camera" title="上传头像"><img src="images/57-xiangji.png" alt=""></div>
+    </div>
+    <div class="tools">
+        <div class="tools-in">
+            <div class="border"><span>昵称</span>
+                <p><span>丸子小丸子</span><a href="58-modify-name.html" class="right-arrow-noPosition"></a></p>
+            </div>
+            <div class="border"><span>性别</span>
+                <p><span>女</span><a href="" class="right-arrow-noPosition"></a></p>
+            </div>
+            <div class="border"><span>出生日期</span>
+                <p><span id="trigger">2020.06.12</span><a href="" class="right-arrow-noPosition"></a></p>
+            </div>
+            <div class="border"><span>所在城市</span>
+                <p><span>武汉市</span><a href="" class="right-arrow-noPosition"></a></p>
+            </div>
+            <div class="border"><span>学历</span>
+                <p><span>本科</span><a href="" class="right-arrow-noPosition"></a></p>
+            </div>
+            <div class="border"><span>行业</span>
+                <p><span>自由职业者</span></p>
+            </div>
+            <div class="border"><span>职业</span>
+                <p><span>职业</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/auto-size.js"></script>
+<script src="js/mobileSelect.js"></script>
+<script>
+    window.onload=function (){
+        let camera=document.getElementsByClassName("camera").item(0);
+        camera.onclick=function (){
+            let upload=document.getElementsByClassName("upload").item(0);
+            upload.style.display="block";
+            let button_c=upload.getElementsByClassName("button-cancel").item(0);
+            button_c.onclick=function (){
+                upload.style.display="none";
+            }
+        }
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+<script>
+    <!--日期选择-->
+    let years=[];
+    let month=[];
+    let day=[];
+    let myDate = new Date();
+    myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+    myDate.getMonth();       //获取当前月份(0-11,0代表1月)
+    myDate.getDate();
+    let _data=[];
+    for(let i=0; i<myDate.getFullYear()-1980; i++){
+        //年
+        let obj={};
+        let yer=1980+i+1;
+        obj.value=1980+i+1;
+        let _data2=[];
+        for(let n=0; n<12; n++){
+            //月
+            let obj2={};
+            if(n<9){
+                obj2.value='0'+(n+1);
+            }else{
+                obj2.value=n+1;
+            }
+            let _data3=[];
+            if(n==1){
+                let cond1 = yer % 4 == 0;  //条件1：年份必须要能被4整除
+                let cond2 = yer % 100 != 0;  //条件2：年份不能是整百数
+                let cond3 = yer % 400 ==0;
+                let cond = cond1 && cond2 || cond3;
+                //闰年
+                if(cond){
+                    for(let y=0; y<29; y++){
+                        //日
+                        let obj3={};
+                        if(y<9){
+                            obj3.value='0'+(y+1);
+                        }else{
+                            obj3.value=y+1;
+                        }
+                        _data3.push(obj3)
+                    }
+                }else{
+                    for(let y=0; y<28; y++){
+                        //日
+                        let obj3={};
+                        if(y<9){
+                            obj3.value='0'+(y+1);
+                        }else{
+                            obj3.value=y+1;
+                        }
+                        _data3.push(obj3)
+                    }
+                }
+            }else if(n==0||n==2||n==4||n==6||n==7||n==9||n==11){
+                for(let y=0; y<31; y++){
+                    //日
+                    let obj3={};
+                    if(y<9){
+                        obj3.value='0'+(y+1);
+                    }else{
+                        obj3.value=y+1;
+                    }
+                    _data3.push(obj3)
+                }
+            }else{
+                for(let y=0; y<30; y++){
+                    //日
+                    let obj3={};
+                    if(y<9){
+                        obj3.value='0'+(y+1);
+                    }else{
+                        obj3.value=y+1;
+                    }
+                    _data3.push(obj3)
+                }
+            }
+            obj2.childs=_data3;
+            _data2.push(obj2);
+        }
+        obj.childs=_data2;
+        _data.push(obj)
+    }
+    let mobileSelect = new MobileSelect({
+        trigger: '#trigger',
+        title: '日期选择',
+        wheels: [
+            {data:_data}
+        ],
+        transitionEnd:function(indexArr, data){
+            console.log(data);
+        },
+        callback:function(indexArr, data){
+            console.log(data);
+            $("#trigger").text(data[0].value+'.'+data[1].value+'.'+data[2].value)
+        }
+    });
+
+</script>
+</body>
+</html>

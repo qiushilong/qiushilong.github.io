@@ -1,0 +1,121 @@
+@charset "UTF-8";
+* {
+  font-family: 'PingFang','Microsoft YaHei',Arial,'宋体'; }
+
+body {
+  min-width: 320px; }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2707884 */
+  src: url("../fonts/17-fonts/iconfont.woff") format("woff2"), url("../fonts/17-fonts/iconfont.woff2") format("woff"), url("../fonts/17-fonts/iconfont.ttf") format("truetype"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.main {
+  width: 95%;
+  margin: 0 auto; }
+
+.title {
+  height: 1.6rem;
+  display: flex;
+  position: relative; }
+  .title a {
+    position: absolute;
+    display: flex;
+    width: .3rem;
+    height: 1.6rem;
+    align-items: center;
+    margin-left: .2rem;
+    font-size: .56rem;
+    color: #0D182E; }
+  .title h1 {
+    flex: 1;
+    font-size: .64rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #0D182E;
+    font-weight: 700; }
+
+.search {
+  height: 1.32rem;
+  display: flex;
+  position: relative;
+  margin: .3rem auto; }
+  .search span {
+    position: absolute;
+    font-size: .46rem;
+    color: #757575;
+    top: .45rem;
+    left: .4rem; }
+  .search input {
+    width: 100%;
+    height: 1.32rem;
+    outline: none;
+    border: none;
+    background-color: #F5F6FA;
+    border-radius: 1.5rem;
+    font-size: .48rem;
+    padding-left: 1rem;
+    color: #757575; }
+
+.nav {
+  margin: 24px 0; }
+  .nav ul {
+    display: flex;
+    justify-content: center; }
+    .nav ul li {
+      height: 1rem;
+      margin: 0 .52rem;
+      font-size: .52rem;
+      color: #0E1527;
+      padding: 0 .3rem;
+      line-height: 1rem; }
+    .nav ul .active {
+      color: #fff;
+      background-color: #FD3245;
+      border-radius: 1rem; }
+
+.content ul {
+  display: flex;
+  flex-flow: column wrap; }
+  .content ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .35rem 0; }
+    .content ul li .msg {
+      display: flex;
+      align-items: center; }
+      .content ul li .msg .jp {
+        width: .8rem;
+        height: .8rem; }
+      .content ul li .msg .nojp {
+        width: .8rem;
+        height: .8rem;
+        line-height: .8rem;
+        text-align: center;
+        background-color: #EFEFF1;
+        color: #B2BBC3;
+        border-radius: 50%;
+        font-size: .44rem; }
+      .content ul li .msg .headshot {
+        width: 1.4rem;
+        height: 1.4rem;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 .4rem; }
+        .content ul li .msg .headshot img {
+          width: 1.4rem; }
+      .content ul li .msg .name {
+        font-size: .52rem;
+        color: #171F34; }
+    .content ul li .influence span {
+      color: #FE1A46;
+      font-size: .44rem; }
+
+/*# sourceMappingURL=getblogger.css.map */

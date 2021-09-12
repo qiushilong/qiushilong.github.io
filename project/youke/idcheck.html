@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>身份认证</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/idcheck.min.css">
+</head>
+
+<body>
+    <header class="title main">
+        <a href="me.html" class="iconfont">
+            &#xe646;
+        </a>
+        <h1>
+            身份认证
+        </h1>
+    </header>
+
+    <section class="content">
+        <ul class="main">
+            <li>
+                <div class="row">
+                    <span>头像</span>
+                    <div>
+                        <span class="pic">
+                            <img src="./images/33-headshot.png" alt="">
+                        </span>
+                        <span class="iconfont">&#xe646;</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <span>昵称</span>
+                    <div>
+                        <span class="text">
+                            丸子啊丸子
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <span>姓名</span>
+                    <div>
+                        <span class="text">
+                            王晶晶
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <span>性别</span>
+                    <div>
+                        <span class="text">
+                            女
+                        </span>
+                        <span class="iconfont">&#xe646;</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <span>手机号</span>
+                    <div>
+                        <span class="text">
+                            25
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <span>身份证</span>
+                    <div>
+                        <span class="text">
+                            420117198502062356
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+</body>
+
+</html>

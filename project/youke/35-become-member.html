@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-成为会员</title>
+    <link rel="stylesheet" href="scss/35-become-member.css">
+</head>
+<body>
+<section class="chong-zhi">
+    <div class="content">
+        <h3>支付</h3>
+        <div class="method">
+            <p> <img src="images/35-weixin.png" alt=""><label for="weixin">微信支付</label></p><input id="weixin" type="radio" name="pay" checked="checked">
+        </div>
+        <div class="method">
+            <p><img src="images/35-zhifubao.png" alt=""><label for="zhifubao">支付宝支付</label></p><input id="zhifubao" type="radio" name="pay"></div>
+        <div class="method">
+            <p><img src="images/35-yue.png" alt=""><label for="yue">余额支付</label></p><input id="yue" type="radio" name="pay"></div>
+        <div id="cancel" class="cancel">取消</div>
+    </div>
+</section>
+<header class="header">
+    <div class="head-in">
+        <a href="me.html" class="left-arrow-noPosition"></a>
+        <p class="title">开通会员</p>
+    </div>
+</header>
+<div class="scroll-content">
+    <section class="banner">
+        <img src="images/35-bg.jpg" alt="">
+    </section>
+    <footer class="footer">
+        <div class="footer-in">
+            <div class="up">
+                <div class="div div1">
+                    <p>咸鱼会员</p>
+                    <p class="price">￥<span class="num">90.00</span></p>
+                </div>
+                <div class="div div2">
+                    <p>抖推小程序会员</p>
+                    <p class="price">￥<span class="num">180.00</span></p>
+                </div>
+                <div class="div div3">
+                    <p>课程视频会员</p>
+                    <p class="price">￥<span class="num">200.00</span></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="sure" class="sure">确认</div>
+                <div class="tiao-kuan">
+                    <input type="checkbox">同意<span>《服务条款及隐私协议》</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<script>
+    window.onload=function (){
+        let sure=document.getElementById("sure");
+        sure.onclick=function () {
+            let chongzhi=document.getElementsByClassName("chong-zhi").item(0);
+            chongzhi.style.display='block';
+            let cancel=document.getElementById('cancel');
+            cancel.onclick=function (){
+                chongzhi.style.display='none';
+            }
+        }
+        function getHeight(){
+            let content=document.getElementsByClassName("scroll-content").item(0);
+            console.log(content)
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@import "reset";
+@import "lw-variables";
+@import "lw-common";
+
+html {
+  font-size: (100vw/7.5);
+}
+
+body {
+  background-color: #fff;
+}
+
+.active-price {
+  background-color: #d2ecff;
+  color: #0F9CFF !important;
+  border-color: #0f9cff !important;
+}
+
+.header {
+  background-color: #fff;
+
+  .head-in {
+    height: 1.14rem;
+    display: flex;
+    width: $BanXinWidth;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .left-arrow-noPosition {
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: $fontColorDeep;
+    }
+
+    p {
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 0.32rem;
+      color: $fontColorDeep;
+      font-weight: bold;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F9FBFC;
+
+  .up {
+    background-color: #fff;
+
+    .up-in {
+      width: $BanXinWidth;
+      margin: 0 auto;
+
+      .yu-e {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0.1rem;
+        height: 1.8rem;
+        background-color: #0F9CFF;
+
+        > span {
+          margin-left: 0.42rem;
+          font-size: 0.26rem;
+          color: #fff;
+        }
+
+        .price {
+          margin-top: 0.28rem;
+          margin-left: 0.42rem;
+          font-size: 0.28rem;
+          color: #fff;
+
+          .num {
+            font-size: 0.54rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .panel {
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .price {
+          padding-bottom: 0.3rem;
+          margin-top: 0.11rem;
+          box-sizing: border-box;
+          font-size: 0.26rem;
+          font-weight: bold;
+          width: 33%;
+          height: 1.1rem;
+          text-align: center;
+          line-height: 1.1rem;
+          border: 2px solid #e0e4e9;
+          border-radius: 0.1rem;
+          color: #4B5262;
+          letter-spacing: -0.05rem;
+
+          .num {
+            font-size: 0.46rem;
+          }
+
+          &:nth-child(3n-1) {
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    .pay {
+        .bottom-in {
+          width: $BanXinWidth;
+          margin: 0 auto;
+        .head {
+          height: 0.95rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .title{
+            font-size: 0.26rem;
+            color: #151F38;
+            font-weight: bold;
+          }
+          .help{
+            display: flex;
+            span{
+              font-size: 0.24rem;
+              color: #777C8A;
+            }
+            p{
+              margin-left: 0.1rem;
+              width: 0.28rem;
+              height: 0.28rem;
+              border-radius: 50%;
+              border: 1px solid #777c8a;
+              font-size: 0.12rem;
+              line-height: 0.28rem;
+              text-align: center;
+            }
+          }
+        }
+
+        .method {
+          background-color: #fff;
+          box-sizing: border-box;
+          border-bottom: 1px solid #EFF1F6;
+          height: 0.95rem;
+          width: 100%;
+          padding: 0 0.1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .left {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 0.16rem;
+              width: 0.4rem;
+            }
+
+            label {
+              color: #1E2138;
+              font-size: 0.26rem;
+            }
+          }
+
+          input {
+            width: 0.38rem;
+            height: 0.38rem;
+          }
+        }
+      }
+    }
+    .sure{
+      .sure-in{
+        width: $BanXinWidth;
+        margin: 0 auto;
+        .button{
+          font-size: 0.28rem;
+          color: #fff;
+          text-align: center;
+          line-height:0.86rem;
+          width: 6.8rem;
+          height: 0.86rem;
+          background: #0f9cff;
+          border-radius: 0.43rem;
+        }
+        .tiao-kuan{
+          display: flex;
+          margin: 0.25rem 0;
+          input{
+            width: 0.3rem;
+            height: 0.3rem;
+            margin-right: 0.12rem;
+          }
+          label{
+            font-size: 0.24rem;
+            color: #979BA6;
+            span{
+              color: #0F9CFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}

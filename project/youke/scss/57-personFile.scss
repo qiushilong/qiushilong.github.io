@@ -1,0 +1,126 @@
+@import "reset";
+@import "lw-variables";
+@import "lw-common";
+html {
+  font-size: (100vw/7.5);
+}
+.header{
+  background-color: #fff;
+  .head-in{
+    height: 1.14rem;
+    display: flex;
+    width: $BanXinWidth;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    .left-arrow-noPosition{
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: $fontColorDeep;
+    }
+    p{
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 0.32rem;
+      color: $fontColorDeep;
+      font-weight: bold;
+    }
+  }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9FB;
+  >div{
+    background-color: #fff;
+  }
+  .head-p{
+    position: relative;
+    height: 1.89rem;
+      .img{
+        margin: 0 auto;
+        width: 1.26rem;
+        height: 1.26rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+    .camera{
+      display: flex;
+      z-index: 5;
+      width: 0.42rem;
+      height: 0.42rem;
+      position: absolute;
+      top:1.26rem;
+      right: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      transform: translate(150%,-100%);
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .tools{
+    flex-grow: 1;
+    margin-top: 0.2rem;
+    .tools-in{
+      width: $BanXinWidth;
+      margin: 0 auto;
+      div{
+        box-sizing: border-box;
+        height: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.01rem solid #BBBFCD;
+        >span{
+          font-size: 0.26rem;
+          color: #151F38;
+          font-weight: bold;
+        }
+        p{
+          display: flex;
+          align-items: center;
+          span{
+            font-size: 0.26rem;
+            color: #B6BAC4;
+            margin-right: 0.13rem;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+.upload{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  z-index: 10;
+  .load-c{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #FBFBFC;
+    p{
+      height: 0.96rem;
+      background-color: #fff;
+      line-height: 0.96rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #000000;
+      font-weight: bold;
+      border-bottom: 1px solid #FBFBFC;
+    }
+    .button-cancel{
+      margin-top: 0.2rem;
+      border: none;
+    }
+  }
+}

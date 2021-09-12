@@ -1,0 +1,144 @@
+@import "reset";
+@import "lw-variables";
+@import "lw-common";
+html {
+  font-size: (100vw/7.5);
+}
+.header {
+  .head-in {
+    height: 1.14rem;
+    display: flex;
+    width: $BanXinWidth;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    .left-arrow-noPosition {
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: #0D182E;
+    }
+    .title{
+      font-size: 0.32rem;
+      color: #0D182E;
+      font-weight: bold;
+    }
+
+    a:last-child {
+      font-size: 0.28rem;
+      color: #0D182E;
+    }
+  }
+}
+.content{
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F9FBFC;
+  .up{
+      background-color: #fff;
+    .in{
+      width: $BanXinWidth;
+      margin: 0 auto;
+      .info{
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.26rem;
+        color: #0D182E;
+        font-weight: bold;
+      }
+      .max{
+        height: 0.8rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.46rem;
+        color: #0D182E;
+        font-weight: bold;
+        span{
+          margin-left: 0.24rem;
+          color: #C9CDD4;
+          font-size: 0.26rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .bottom{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    .b-up{
+      .b-up-in{
+        width: $BanXinWidth;
+        margin: 0 auto;
+        .title{
+          height: 0.95rem;
+          line-height: 0.95rem;
+            font-size: 0.26rem;
+            color: #151F38;
+            font-weight: bold;
+        }
+        .method {
+          background-color: #fff;
+          box-sizing: border-box;
+          border-bottom: 1px solid #EFF1F6;
+          height: 0.95rem;
+          width: 100%;
+          padding: 0 0.1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .left {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 0.16rem;
+              width: 0.4rem;
+            }
+            label {
+              color: #1E2138;
+              font-size: 0.26rem;
+            }
+          }
+          input {
+            width: 0.38rem;
+            height: 0.38rem;
+          }
+        }
+        .careful{
+          .title{
+            font-size: 0.26rem;
+            color: #151F38;
+            font-weight: bold;
+          }
+          ol{
+
+            width: 100%;
+            li{
+              list-style-type: decimal;
+              list-style-position: inside;
+              font-size: 0.24rem;
+              color: #696F7B;
+              line-height: 0.42rem;
+            }
+          }
+        }
+      }
+    }
+    .down{
+      margin-bottom: 0.2rem;
+      .down-in{
+        width: $BanXinWidth;
+        margin: 0 auto;
+        line-height: 0.86rem;
+        height: 0.86rem;
+        text-align: center;
+        background: #0f9cff;
+        border-radius: 0.43rem;
+        font-size: 0.28rem;
+        color: #fff;
+      }
+    }
+  }
+}

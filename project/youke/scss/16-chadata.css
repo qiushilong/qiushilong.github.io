@@ -1,0 +1,347 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.search-nav {
+  height: 16.6666666667vw;
+  display: flex;
+  align-items: center;
+}
+.search-nav > a {
+  display: block;
+  width: 100%;
+  height: 8.8vw;
+  border-radius: 2vw;
+  background-color: #F5F6FA;
+  display: flex;
+  align-items: center;
+}
+.search-nav > a > img {
+  margin-left: 3vw;
+  margin-right: 2vw;
+  width: 3.74vw;
+}
+.search-nav > a > input {
+  width: 84%;
+  font-size: 3.74vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.banner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-nav > a > img {
+  height: 32vw;
+}
+
+.hr-gray {
+  width: 100%;
+  height: 2.6666666667vw;
+  background: #f9fbfc;
+  margin-top: 2.5vw;
+  margin-bottom: 2.6666666667vw;
+}
+
+.content .content-title {
+  height: 13.3333333333vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content .content-title > div {
+  display: flex;
+  align-items: center;
+}
+.content .content-title > div > img {
+  width: 6vw;
+  margin-right: 1.3333333333vw;
+}
+.content .content-title > div > p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 4vw;
+}
+.content .content-title .more {
+  color: #BBBFCD;
+  font-size: 3.2vw;
+}
+.content .content-nav {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .content-nav > a > p {
+  font-size: 3.3333333333vw;
+}
+.content .content-nav > a .active {
+  font-size: 3.6vw;
+  position: relative;
+  font-weight: bold;
+  z-index: 10;
+}
+.content .content-nav > a .active:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.3333333333vw;
+  background: #5abefd;
+  top: 4vw;
+  z-index: -1;
+}
+.content .content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21.3333333333vw;
+  height: 7.2vw;
+  background: #f4f7fa;
+  border-radius: 3vw;
+  color: #9399A4;
+  font-size: 3.2vw;
+  margin: 0 auto;
+}
+.content .redian-info .redian-box {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  height: 20vw;
+}
+.content .redian-info .redian-box > a > img {
+  height: 16vw;
+  width: 16vw;
+  margin-right: 3vw;
+}
+.content .redian-info .redian-box .redian-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content .redian-info .redian-box .redian-text > div {
+  display: flex;
+  justify-content: space-between;
+}
+.content .redian-info .redian-box .redian-text > div > p {
+  font-size: 2.6666666667vw;
+}
+.content .redian-info .redian-box .redian-text > div .t-t-t {
+  font-size: 4vw;
+  font-weight: bold;
+}
+.content .redian-info .redian-box .redian-text > div .gray {
+  color: #9399A4;
+}
+.content .redian-info .redian-box .redian-text > div .red {
+  color: #FE1A46;
+}
+.content .redian-info .redian-box .redian-text .text-title {
+  margin-bottom: 4.5vw;
+}
+.content .redian-info .redian-box .redian-text .text-title .gray {
+  font-size: 3.3333333333vw;
+}
+.content .teach-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content .teach-info .teach-box {
+  margin-top: 4vw;
+  width: 44.6666666667vw;
+  height: 46.6666666667vw;
+  border-radius: 2vw;
+  background-color: #FFFFFF;
+  box-shadow: 0vw 0vw 2vw 2vw #f5f5f7;
+}
+.content .teach-info .teach-box .teach-img {
+  position: relative;
+  width: 100%;
+}
+.content .teach-info .teach-box .teach-img > img {
+  width: 100%;
+}
+.content .teach-info .teach-box .teach-img .cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0vw;
+  height: 10.4vw;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  z-index: 100;
+}
+.content .teach-info .teach-box .teach-img .cover > p {
+  color: #FFFFFF;
+  font-size: 2vw;
+  height: 4vw;
+  background: rgba(0, 0, 0, 0.4);
+  line-height: 4vw;
+  margin-right: 1.6vw;
+}
+.content .teach-info .teach-box .teach-img .cover > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1.6vw;
+}
+.content .teach-info .teach-box .teach-img .cover > div > p {
+  color: #FFFFFF;
+  font-size: 2.6666666667vw;
+}
+.content .teach-info .teach-box .teach-img .cover > div > img {
+  width: 3.6vw;
+  margin-right: 1vw;
+}
+.content .teach-info .teach-box .teach-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .teach-info .teach-box .teach-text > p {
+  margin-bottom: 1vw;
+  font-size: 3.2vw;
+  font-weight: bold;
+}
+.content .teach-info .teach-box .teach-text > div {
+  display: flex;
+  width: 100%;
+  height: 4.6666666667vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .teach-info .teach-box .teach-text > div > img {
+  width: 4.6666666667vw;
+  margin-right: 1.5vw;
+}
+.content .teach-info .teach-box .teach-text > div > p {
+  font-size: 2.9333333333vw;
+  text-align: left;
+  color: #363e50;
+}
+.content .hotbang .hotbang-nav {
+  display: flex;
+  height: 14.6666666667vw;
+  justify-content: center;
+  align-items: center;
+}
+.content .hotbang .hotbang-nav > a > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4666666667vw;
+  color: #000000;
+  padding: 1.3333333333vw 2.6666666667vw;
+  margin-right: 3vw;
+}
+.content .hotbang .hotbang-nav > a .active {
+  font-size: 3.7333333333vw;
+  color: #FFFFFF;
+  border-radius: 5vw;
+  background-color: #FD3245;
+}
+.content .hotbang .hotbang-content > div {
+  height: 12.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .hotbang .hotbang-content > div > div.notfire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .hotbang .hotbang-content > div > div.notfire > img {
+  width: 5.3333333333vw;
+  margin-right: 2vw;
+}
+.content .hotbang .hotbang-content > div > div.notfire .img {
+  background-color: #EFEFF1;
+  width: 5.3333333333vw;
+  height: 5.3333333333vw;
+  border-radius: 50%;
+  margin-right: 2vw;
+  text-align: center;
+  font-size: 2.6666666667vw;
+}
+.content .hotbang .hotbang-content > div > div.notfire .img > p {
+  line-height: 5.3333333333vw;
+  color: #9399A4;
+}
+.content .hotbang .hotbang-content > div > div.notfire .hotbang-content-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .hotbang .hotbang-content > div > div.notfire .hotbang-content-main > a > img {
+  width: 9.3333333333vw;
+  height: 9.3333333333vw;
+  margin-right: 2vw;
+}
+.content .hotbang .hotbang-content > div > div.notfire .hotbang-content-main > a > p {
+  color: #171f34;
+  font-size: 3.4666666667vw;
+  font-weight: 550;
+}
+.content .hotbang .hotbang-content > div .fire {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content .hotbang .hotbang-content > div .fire > p {
+  color: #FE1A46;
+  font-size: 2.9333333333vw;
+}
+.content .hot-good .hot-good-content {
+  overflow-x: scroll;
+}
+.content .hot-good .hot-good-content > table > tbody .th {
+  height: 8vw;
+}
+.content .hot-good .hot-good-content > table > tbody .th > td {
+  font-size: 4vw;
+}
+.content .hot-good .hot-good-content > table > tbody > tr {
+  display: flex;
+  align-items: center;
+  height: 12vw;
+}
+.content .hot-good .hot-good-content > table > tbody > tr > td {
+  display: flex;
+  justify-content: center;
+  width: 18vw;
+  font-size: 3.6vw;
+}
+.content .hot-good .hot-good-content > table > tbody > tr .red {
+  font-size: 4vw;
+  color: #FE1A46;
+}
+.content .hot-good .hot-good-content > table > tbody > tr .paiming > img {
+  width: 5.3333333333vw;
+}
+.content .hot-good .hot-good-content > table > tbody > tr .paiming .img {
+  background-color: #EFEFF1;
+  width: 5.3333333333vw;
+  height: 5.3333333333vw;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2.6666666667vw;
+}
+.content .hot-good .hot-good-content > table > tbody > tr .paiming .img > p {
+  line-height: 5.3333333333vw;
+  color: #9399A4;
+}
+.content .hot-good .hot-good-content > table > tbody > tr .info > a > img {
+  width: 9.3333333333vw;
+  height: 9.3333333333vw;
+}
+
+/*# sourceMappingURL=16-chadata.css.map */

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-余额记录</title>
+    <link rel="stylesheet" href="scss/53-yuejilu.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="52-myWallet.html" class="left-arrow-noPosition"></a>
+        <p class="title">余额记录</p>
+        <div class="month"><span class="text">7月</span><p class="bottom-solid-triangle"></p></div>
+    </div>
+    <ul class="month-droplist">
+        <li>
+            <span >1月</span>
+        </li>
+        <li><span>2月</span>
+        </li>
+        <li><span>3月</span>
+
+        </li>
+        <li><span>4月</span>
+
+        </li>
+        <li><span>5月</span>
+
+        </li>
+        <li><span>6月</span>
+
+        </li>
+        <li><span class="active-li">7月</span>
+
+        </li>
+        <li><span>8月</span>
+
+        </li>
+        <li><span>9月</span>
+
+        </li>
+        <li><span>10月</span>
+
+        </li>
+        <li><span>11月</span>
+
+        </li>
+        <li><span>12月</span>
+
+        </li>
+    </ul>
+</header>
+<nav class="top-toolbar">
+    <div class="bar-in">
+        <div class="active-bar">全部</div>
+        <div>充值</div>
+        <div>提现</div>
+        <div>分佣收入</div>
+    </div>
+</nav>
+<section class="content">
+    <div class="content-in">
+        <div class="all">
+            <div>
+                <h3>充值</h3>
+                <span>2019.06.26 08:20:36</span>
+            </div>
+            <div>
+                <h3>分佣收入</h3>
+                <span>2019.06.26 08:20:36</span>
+            </div>
+            <div>
+                <h3>提现</h3>
+                <span>2019.06.26 08:20:36</span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script>
+    window.onload=function (){
+        let bars=Array.from(document.getElementsByClassName("bar-in").item(0).getElementsByTagName("div"));
+        let month=document.getElementsByClassName("month").item(0);
+        let text=month.getElementsByClassName("text").item(0);
+
+        bars.forEach(function (ele,index,bars){
+            ele.onclick=function (){
+                ele.className="active-bar";
+                select(bars,index);
+            }
+        })
+        month.onclick=function (){
+            let droplist=document.getElementsByClassName("month-droplist").item(0);
+            droplist.style.display="block";
+            let items=Array.from(droplist.getElementsByTagName("li"));
+            items.forEach(function (ele,index,items){
+                ele.onclick=function (){
+                    let span=ele.getElementsByTagName("span").item(0)
+                        span.className="active-li";
+                    text.innerHTML=span.innerText;
+                    for(let i=0;i<items.length;i++){
+                        if(i!=index){
+                            items[i].getElementsByTagName("span").item(0).className="";
+                        }
+                    }
+                    droplist.style.display="none";
+                }
+            })
+
+        }
+        function select(bars,index){
+            for (let i=0;i<bars.length;i++){
+                if(i!=index){
+                    bars[i].className="";
+                }
+            }
+        }
+
+    }
+</script>
+</html>

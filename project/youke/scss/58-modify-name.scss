@@ -1,0 +1,99 @@
+@import "reset";
+@import "lw-variables";
+@import "lw-common";
+html {
+  font-size: (100vw/7.5);
+}
+.header{
+  background-color: #fff;
+  .head-in{
+    height: 1.14rem;
+    display: flex;
+    width: $BanXinWidth;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    .left-arrow-noPosition{
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: $fontColorDeep;
+    }
+    p{
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 0.32rem;
+      color: $fontColorDeep;
+      font-weight: bold;
+    }
+  }
+}
+.content{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .c-u{
+    height: 0.74rem;
+    .new-name{
+      box-sizing: border-box;
+      padding-left: 0.19rem;
+      position: relative;
+      width: $BanXinWidth;
+      height: 0.74rem;
+      margin: 0 auto;
+      background-color: #F8F9FD;
+      font-size: 0.28rem;
+      font-weight: bold;
+      color: #151F38;
+      line-height: 0.74rem;
+      textarea{
+        height: 100%;
+        line-height: 0.74rem;
+        border: none;
+        background-color: inherit;
+        overflow: hidden;
+      }
+      .cancel{
+        display: flex;
+        position: absolute;
+        top:50%;
+        right: 0.13rem;
+        transform: translate(0,-50%);
+        width: 0.41rem;
+        height: 0.41rem;
+        background-color: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all .3s;
+        img{
+          width: 100%;
+        }
+        &:hover{
+          width:0.5rem ;
+          height: 0.5rem;
+        }
+      }
+    }
+
+    .tip{
+      margin-left: (100%-$BanXinWidth)/2;
+      font-size: 0.24rem;
+      color: #BEC2CC;
+      margin-top: 0.29rem;
+    }
+  }
+  .button{
+    .sure{
+      width: $BanXinWidth;
+      margin: 0 auto 0.2rem;
+      background-color: #0F9CFF;
+      text-align: center;
+      height: 0.86rem;
+      line-height: 0.86rem;
+      color: #fff;
+      font-size: 0.28rem;
+      border-radius: 0.43rem;
+    }
+  }
+}

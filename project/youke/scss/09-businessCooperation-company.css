@@ -1,0 +1,142 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F5F6FA;
+}
+
+a {
+  display: block;
+}
+
+.bg {
+  background-color: #FFFFFF;
+}
+.bg .html-title {
+  height: 14.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg .html-title p {
+  font-size: 4.6666666667vw;
+  color: #000000;
+}
+.bg .html-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10.6666666667vw;
+}
+.bg .html-nav > a > p {
+  font-size: 4.8vw;
+  color: #000000;
+}
+.bg .html-nav .active > p {
+  font-weight: bold;
+}
+.bg .html-nav .active:after {
+  content: "";
+  display: block;
+  width: 3.3333333333vw;
+  height: 1.3333333333vw;
+  background-color: #0F9CFF;
+  border-radius: 1vw;
+  margin: 0 auto;
+}
+
+.content > div {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 3vw;
+  margin-top: 2.6666666667vw;
+}
+.content > div .border-bottom {
+  border-bottom: 0.5vw dashed #f0f2f6;
+}
+.content > div .content-title {
+  height: 16vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content > div .content-title .l {
+  display: flex;
+  align-items: center;
+}
+.content > div .content-title .l .l-title {
+  display: flex;
+  flex-direction: column;
+}
+.content > div .content-title .l .l-title .l-main {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content > div .content-title .l .l-title .l-main > p {
+  font-size: 3.2vw;
+  color: #6f747e;
+}
+.content > div .content-title .l .l-title .l-main > p > span {
+  color: #fd2746;
+}
+.content > div .content-title .l .l-title .l-main .mar {
+  margin-right: 2vw;
+}
+.content > div .content-title .l .l-title > p {
+  font-size: 3.2vw;
+}
+.content > div .content-title .l > img {
+  width: 10vw;
+  height: 10vw;
+  margin-right: 2vw;
+}
+.content > div .content-title .l > p {
+  font-size: 3.6vw;
+}
+.content > div .content-title .r {
+  display: flex;
+  align-items: center;
+  background-color: #e7f5ff;
+  border-radius: 4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  line-height: 6.6666666667vw;
+}
+.content > div .content-title .r > img {
+  margin-right: 1vw;
+  height: 3.3333333333vw;
+}
+.content > div .content-title .r > p {
+  font-size: 3.3333333333vw;
+  letter-spacing: 0.3vw;
+  color: #1da2ff;
+}
+.content > div .content-title .red {
+  background-color: #ffe8ec;
+}
+.content > div .content-title .red > p {
+  color: #fd2746;
+}
+.content > div .content-main {
+  height: 14.6666666667vw;
+  width: 85%;
+  font-size: 3.2vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.content > div .content-main > p {
+  line-height: 5.3333333333vw;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #6f747e;
+}
+
+/*# sourceMappingURL=09-businessCooperation-company.css.map */

@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/* CSS reset */
+html {
+  color: #000;
+  background: #FFF;
+  font-family: Arial,'Microsoft YaHei','宋体'; }
+
+/*清除默认的内边距和外边距等*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, strong {
+  padding: 0;
+  margin: 0;
+  font-family: 'Microsoft YaHei',Arial,'宋体'; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*清除默认边框*/
+fieldset, img {
+  border: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none; }
+
+/*此处待添加默认链接颜色*/
+var, em, strong {
+  font-style: normal; }
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit; }
+
+del, ins {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+/*清除默认的字体大小和文字粗细*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: baseline; }
+
+sub {
+  vertical-align: baseline; }
+
+legend {
+  color: #000; }
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+input, button, textarea, select {
+  *font-size: 100%; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none; }
+
+/*去除移动端点击事件出现的背景框*/
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*清除浮动*/
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both; }
+
+/*清除浮动的兼容IE*/
+.clearfix {
+  *zoom: 1; }
+
+.right-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(45deg);
+  border-right: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.left-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(-45deg);
+  border-left: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.bottom-solid-triangle {
+  border-top: 0.1rem solid #0D182E;
+  border-left: 0.1rem  solid transparent;
+  border-right: 0.1rem  solid transparent; }
+
+.border {
+  border: none !important;
+  position: relative; }
+  .border:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #F9F9FB;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+html {
+  font-size: 13.3333333333vw; }
+
+.header {
+  background-color: #fff; }
+  .header .head-in {
+    height: 1.14rem;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .header .head-in .left-arrow-noPosition {
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: #0D182E; }
+    .header .head-in p {
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 0.32rem;
+      color: #0D182E;
+      font-weight: bold; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9FB; }
+  .content > div {
+    background-color: #fff; }
+  .content .head-p {
+    position: relative;
+    height: 1.89rem; }
+    .content .head-p .img {
+      margin: 0 auto;
+      width: 1.26rem;
+      height: 1.26rem;
+      border-radius: 50%;
+      overflow: hidden; }
+      .content .head-p .img img {
+        width: 100%; }
+    .content .head-p .camera {
+      display: flex;
+      z-index: 5;
+      width: 0.42rem;
+      height: 0.42rem;
+      position: absolute;
+      top: 1.26rem;
+      right: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      transform: translate(150%, -100%); }
+      .content .head-p .camera img {
+        width: 100%; }
+  .content .tools {
+    flex-grow: 1;
+    margin-top: 0.2rem; }
+    .content .tools .tools-in {
+      width: 95%;
+      margin: 0 auto; }
+      .content .tools .tools-in div {
+        box-sizing: border-box;
+        height: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.01rem solid #BBBFCD; }
+        .content .tools .tools-in div > span {
+          font-size: 0.26rem;
+          color: #151F38;
+          font-weight: bold; }
+        .content .tools .tools-in div p {
+          display: flex;
+          align-items: center; }
+          .content .tools .tools-in div p span {
+            font-size: 0.26rem;
+            color: #B6BAC4;
+            margin-right: 0.13rem;
+            font-weight: normal; }
+
+.upload {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10; }
+  .upload .load-c {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #FBFBFC; }
+    .upload .load-c p {
+      height: 0.96rem;
+      background-color: #fff;
+      line-height: 0.96rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #000000;
+      font-weight: bold;
+      border-bottom: 1px solid #FBFBFC; }
+    .upload .load-c .button-cancel {
+      margin-top: 0.2rem;
+      border: none; }
+
+/*# sourceMappingURL=57-personFile.css.map */

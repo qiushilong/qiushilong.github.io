@@ -1,0 +1,173 @@
+.width95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F5F6FA;
+}
+
+.search-content {
+  background-color: #FFFFFF;
+}
+.search-content .search-content-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vw;
+}
+.search-content .search-content-banner > a > p.back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000;
+  font-size: 6vw;
+}
+.search-content .search-content-banner .search {
+  width: 85%;
+  height: 8.8vw;
+  border-radius: 2vw;
+  background-color: #F5F6FA;
+  display: flex;
+  align-items: center;
+}
+.search-content .search-content-banner .search > img {
+  margin-left: 3vw;
+  margin-right: 2vw;
+  width: 3.74vw;
+}
+.search-content .search-content-banner .search > input {
+  padding-left: 3vw;
+  width: 84%;
+  font-size: 3.74vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.search-content .search-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 14.6666666667vw;
+}
+.search-content .search-title > a > p {
+  font-size: 4.8vw;
+  color: #000000;
+}
+.search-content .search-title .active > p {
+  font-weight: bold;
+}
+.search-content .search-title .active:after {
+  content: "";
+  display: block;
+  width: 3.3333333333vw;
+  height: 1.3333333333vw;
+  background-color: #0F9CFF;
+  border-radius: 1vw;
+  margin: 0 auto;
+}
+
+.search-result-good {
+  border-radius: 3vw;
+  background-color: #FFFFFF;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin: 3vw 3vw 0vw;
+}
+
+.content .hot-good-content .good1 {
+  height: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17.3333333333vw;
+}
+.content .hot-good-content .good1 .good2 {
+  width: 100%;
+  display: flex;
+}
+.content .hot-good-content .good1 .good2 > a > img {
+  width: 13.3333333333vw;
+  height: 13.3333333333vw;
+  margin-right: 2vw;
+}
+.content .hot-good-content .good1 .good2 .good3 {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content .hot-good-content .good1 .good2 .good3 .good-main {
+  display: flex;
+  justify-content: space-between;
+}
+.content .hot-good-content .good1 .good2 .good3 .good-main .gray {
+  display: flex;
+  align-items: baseline;
+  color: #878c9a;
+  font-size: 2.9333333333vw;
+}
+.content .hot-good-content .good1 .good2 .good3 .good-main .red {
+  color: #FF3A3A;
+  font-size: 3.2vw;
+}
+.content .hot-good-content .good1 .good2 .good3 .good-main .red > span {
+  font-size: 4vw;
+}
+.content .hot-good-content .good1 .good2 .good3 .good-title {
+  color: #151f38;
+  font-size: 3.4666666667vw;
+  font-weight: bold;
+}
+.content .hot-per-content > div {
+  height: 14.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .hot-per-content > div > div.notfire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .hot-per-content > div > div.notfire > a > img {
+  width: 10vw;
+  height: 10vw;
+  margin-right: 2vw;
+}
+.content .hot-per-content > div > div.notfire .hotbang-content-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.content .hot-per-content > div > div.notfire .hotbang-content-main > a > p {
+  color: #171f34;
+  font-size: 3.4666666667vw;
+  font-weight: 550;
+}
+.content .hot-per-content > div > div.notfire .hotbang-content-main > p {
+  color: #878c9a;
+  font-size: 2.9333333333vw;
+}
+.content .hot-per-content > div .fire {
+  display: flex;
+  align-items: center;
+  line-height: 6.6666666667vw;
+  border-radius: 4vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  background-color: #fff2f4;
+}
+.content .hot-per-content > div .fire > img {
+  width: 2.6666666667vw;
+  height: 3.2vw;
+}
+.content .hot-per-content > div .fire > p {
+  color: #FE1A46;
+  font-size: 2.9333333333vw;
+}
+
+/*# sourceMappingURL=08-search-good.css.map */

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-充值</title>
+    <link rel="stylesheet" href="scss/54-chongzhi.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="52-myWallet.html" class="left-arrow-noPosition"></a>
+        <p class="title">账户充值</p>
+    </div>
+</header>
+<section class="content">
+    <div class="up">
+        <div class="up-in">
+            <div class="yu-e">
+                <span>账户余额(元)</span>
+                <p class="price">￥<span class="num">65326.03</span></p>
+            </div>
+            <div class="panel">
+                <p class="price active-price" >￥<span class="num">100.00</span></p>
+                <p class="price">￥<span class="num">200.00</span></p>
+                <p class="price">￥<span class="num">500.00</span></p>
+                <p class="price">￥<span class="num">1000.00</span></p>
+                <p class="price">￥<span class="num">5000.00</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="pay">
+        <div class="bottom-in">
+                <div class="head">
+                    <span class="title">支付方式</span>
+                    <div class="help"><span>充值说明</span><p>?</p></div>
+                </div>
+                <div class="method">
+                    <div class="left">
+                        <img src="images/35-weixin.png" alt="">
+                        <label for="weixin">微信支付</label>
+                    </div>
+                    <input type="radio" name="pay" id="weixin" checked="checked">
+                </div>
+                <div class="method">
+                    <div class="left">
+                        <img src="images/35-zhifubao.png" alt="">
+                        <label for="zfb">支付宝支付</label>
+                    </div>
+                    <input type="radio" name="pay" id="zfb">
+                </div>
+            </div>
+        </div>
+        <div class="sure">
+            <div class="sure-in">
+                <div class="button">需支付100元</div>
+                <div class="tiao-kuan">
+                    <input type="checkbox" id="agree" checked="checked">
+                    <label for="agree">同意 <span>《服务条款及隐私协议》</span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    window.onload=function (){
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+
+        let panels=Array.from(document.getElementsByClassName("panel").item(0).getElementsByTagName("p"));
+        let sure=document.getElementsByClassName("button").item(0);
+        panels.forEach(function (ele,index,panels){
+            ele.onclick=function (){
+                ele.className="price active-price";
+                let text=parseInt(ele.innerText.substring(1));
+                sure.innerHTML=`需支付${text}元`;
+                for(let i=0;i<panels.length;i++){
+                    if(i!=index){
+                        panels[i].className="price";
+                    }
+                }
+            }
+        })
+
+    }
+</script>
+</body>
+</html>

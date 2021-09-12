@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-我的优惠券</title>
+    <link rel="stylesheet" href="scss/47-youhuiquan.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="me.html" class="left-arrow-noPosition"></a>
+        <p class="title">优惠券</p>
+    </div>
+</header>
+<nav class="top-toolbar">
+    <span class="item dai active-bar">未使用(3)</span>
+    <span class="item yi">已使用(2)</span>
+    <span class="item guo">已过期(6)</span>
+</nav>
+<section class="content">
+    <div class="content-in">
+        <div class="dai-c i-c">
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">50</span></p>
+                    <span class="tiaojian">满600元可用</span>
+                </div>
+                <div class="center">
+                    <h3>膨化食品专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    去使用
+                </a>
+            </div>
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">10</span></p>
+                    <span class="tiaojian">满80元可用</span>
+                </div>
+                <div class="center">
+                    <h3>娱乐图文专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    去使用
+                </a>
+            </div>
+        </div>
+        <div class="yi-c i-c">
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">50</span></p>
+                    <span class="tiaojian">满600元可用</span>
+                </div>
+                <div class="center">
+                    <h3>膨化食品专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    <img src="images/47-yiyong.png" alt="">
+                </a>
+            </div>
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">10</span></p>
+                    <span class="tiaojian">满80元可用</span>
+                </div>
+                <div class="center">
+                    <h3>娱乐图文专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    <img src="images/47-yiyong.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="guo-c i-c">
+            <div class="zhao"></div>
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">50</span></p>
+                    <span class="tiaojian">满600元可用</span>
+                </div>
+                <div class="center">
+                    <h3>膨化食品专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    <img src="images/47-yiguoqi.png" alt="">
+                </a>
+            </div>
+            <div class="quan">
+                <div class="left">
+                    <p class="price">￥<span class="num">10</span></p>
+                    <span class="tiaojian">满80元可用</span>
+                </div>
+                <div class="center">
+                    <h3>娱乐图文专区使用</h3>
+                    <span class="timeout">有效期至：2020.02.16</span>
+                </div>
+                <a href="javascript:void(0)" class="right">
+                    <img src="images/47-yiguoqi.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<script>
+    window.onload=function (){
+        let items=Array.from(document.getElementsByClassName("item"));
+        let i_cs=Array.from(document.getElementsByClassName("i-c"));
+        console.log(items,i_cs);
+        let names=[];
+        items.forEach(function (ele,index,items){
+            names.push(ele.className);
+            ele.onclick=function (){
+              if(ele.className==names[index]){
+                  ele.className+=" active-bar";
+                  i_cs[index].style.display='block';
+                  show(items,i_cs,names,index);
+              }
+            }
+        })
+        names[0]="item dai";
+        console.log(names);
+        function show(items,i_cs,names,index){
+            for(let i=0;i<items.length;i++){
+                if(i!=index){
+                    items[i].className=names[i];
+                    i_cs[i].style.display="none";
+                }
+            }
+        }
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let tool=document.getElementsByTagName("nav").item(0).offsetHeight;
+            let heigth=window.innerHeight-header-tool;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+// inphone6 按1rem=50px来算，2倍稿不用除2
+
+*{
+    font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+    box-sizing: content-box;
+}
+
+body{
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 2707884 */
+    src: url('../fonts/17-fonts/iconfont.woff') format('woff2'),
+         url('../fonts/17-fonts/iconfont.woff2') format('woff'),
+         url('../fonts/17-fonts/iconfont.ttf') format('truetype');
+}
+  
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title{
+    height: 1.6rem;
+    display: flex;
+    position: relative;
+    a{
+        position: absolute;
+        display: flex;
+        width: .3rem;
+        height: 1.6rem;
+        align-items: center;
+        margin-left: .2rem;
+        font-size: .56rem;
+        color: #0D182E;
+    }
+    h1{
+        flex: 1;
+        font-size: .64rem;
+        line-height: 1.6rem; 
+        text-align: center;  
+        color: #0D182E;
+        font-weight: 700;
+    }
+}
+
+.content{
+    height: 8.66rem;
+    margin-top: .44rem;
+    .top{
+        position: relative;
+        width: 100%;
+        height: 6rem;
+        .video_pic{
+            width: 100%;
+            height: 6rem;
+            border-radius: .2rem;
+            overflow: hidden;
+            img{
+                width: 110%;
+                transform: translate(-5%,0);
+            }
+        }
+        .msg{
+            width: 100%;
+            position: absolute;
+            bottom: .28rem;
+            z-index: 9;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .4rem;
+            color: #fff;
+            .left{
+                margin-left: .9rem;
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: 3rem;
+        background-color: #fff;
+        h1{
+            font-size: .64rem;
+            height: 1.4rem;
+            overflow: hidden;
+            margin-bottom: .1rem;
+            margin-top: 10px;
+        }
+        .other{
+            display: flex;
+            .headshot{
+                width: .72rem;
+                height: .72rem;
+                overflow: hidden;
+                border-radius: 50%;
+                img{
+                    height: .72rem;
+                    transform: translate(-0.1rem ,-0.2rem);
+                }
+                margin-right: .4rem;
+            }
+            span{
+                font-size: .44rem;
+            }
+        }
+    }
+}
+
+.chapter{
+    padding: .4rem 0;
+    background-color: #f7f8fa;
+    ul{
+        li{
+            width: 100%;
+            height: 2.2rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:nth-child(n+2){
+                margin-top: .4rem;
+            }
+            .left{
+                margin-left: .46rem;
+                h1{
+                    font-size: .52rem;
+                    color: #171F34;
+                    margin-top: 10px;
+                    transform: translate(0,.04rem);
+                }
+                .iconfont{
+                    font-size: .55rem;
+                }
+                span{
+                    display: inline-block;
+                    color: #878C9A;
+                    font-size: .44rem;
+                    transform: translate(0,-.4rem);
+                }
+            }
+            .right{
+                width: 1.8rem;
+                height: .96rem;
+                margin-right: .38rem;
+                border-radius: .48rem;
+                background-image: linear-gradient(to right, #50B7FF,#0F9BFE );
+                font-size: .44rem;
+                line-height: .96rem;
+                text-align: center;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

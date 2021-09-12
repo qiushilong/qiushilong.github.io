@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,maximum=1.0,minimum=1.0">
+    <title>抖推小程序</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/doutui.min.css">
+</head>
+
+<body>
+    <header class="title main">
+        <a href="01-index.html" class="iconfont">
+            &#xe646;
+        </a>
+        <h1>
+            抖推小程序
+        </h1>
+    </header>
+
+    <section class="search main">
+        <span class="iconfont">&#xe623;</span>
+        <input type="text" placeholder="搜索你想找的~">
+        <div>搜索</div>
+    </section>
+
+    <nav class="nav main">
+        <ul>
+            <li class="active">运动健身</li>
+            <li>美妆护发</li>
+            <li>旅行趣闻</li>
+            <li>美食生活</li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <ul class="main">
+            <li>
+                <a href="videodetail.html" style="display:block;" class="top">
+                    <img src="./images/28-tv1.png" alt="">
+                    <span class="iconfont">&#xe61a;</span>
+                </a>
+                <div class="bottom">
+                    <h1>假如林有有遇上洪世贤</h1>
+                    <p>#假如林有有遇上洪世贤# 绿茶 遇到渣男哈哈哈哈...</p>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <img src="./images/28-tv2.png" alt="">
+                    <span class="iconfont">&#xe61a;</span>
+                </div>
+                <div class="bottom">
+                    <h1>辩手星看自己的奇葩说片段居然惨遭朋友嘲笑</h1>
+                    <p>你在2分钟内改变了我的想[笑cry][笑cry]不过看的那...</p>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <img src="./images/28-tv3.png" alt="">
+                    <span class="iconfont">&#xe61a;</span>
+                </div>
+                <div class="bottom">
+                    <h1>假如林有有遇上洪世贤</h1>
+                    <p>#假如林有有遇上洪世贤# 绿茶 遇到渣男哈哈哈哈...</p>
+                </div>
+            </li>
+            <li>
+                <div class="top">
+                    <img src="./images/28-tv4.png" alt="">
+                    <span class="iconfont">&#xe61a;</span>
+                </div>
+                <div class="bottom">
+                    <h1>假如林有有遇上洪世贤</h1>
+                    <p>#假如林有有遇上洪世贤# 绿茶 遇到渣男哈哈哈哈...</p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <script>
+        //iphone6下 1rem=25px
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth) / 15 + 'px';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* CSS reset */
+html {
+  color: #000;
+  background: #FFF;
+  font-family: Arial,'Microsoft YaHei','宋体'; }
+
+/*清除默认的内边距和外边距等*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, strong {
+  padding: 0;
+  margin: 0;
+  font-family: 'Microsoft YaHei',Arial,'宋体'; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*清除默认边框*/
+fieldset, img {
+  border: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none; }
+
+/*此处待添加默认链接颜色*/
+var, em, strong {
+  font-style: normal; }
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+  font-style: inherit;
+  font-weight: inherit; }
+
+del, ins {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+/*清除默认的字体大小和文字粗细*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: baseline; }
+
+sub {
+  vertical-align: baseline; }
+
+legend {
+  color: #000; }
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+input, button, textarea, select {
+  *font-size: 100%; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none; }
+
+/*去除移动端点击事件出现的背景框*/
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*清除浮动*/
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both; }
+
+/*清除浮动的兼容IE*/
+.clearfix {
+  *zoom: 1; }
+
+.right-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(45deg);
+  border-right: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.left-arrow-noPosition {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: block;
+  transform: rotate(-45deg);
+  border-left: 2px solid #999999;
+  border-top: 2px solid #999999; }
+
+.bottom-solid-triangle {
+  border-top: 0.1rem solid #0D182E;
+  border-left: 0.1rem  solid transparent;
+  border-right: 0.1rem  solid transparent; }
+
+.border {
+  border: none !important;
+  position: relative; }
+  .border:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #F9F9FB;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+html {
+  font-size: 13.3333333333vw; }
+
+.tanchuang {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 10; }
+  .tanchuang .tishi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5.98rem;
+    height: 3.7rem;
+    border-radius: 0.1rem;
+    background-color: #fff; }
+    .tanchuang .tishi h3 {
+      font-size: 0.38rem;
+      color: #071127;
+      font-weight: bold; }
+    .tanchuang .tishi h4 {
+      margin: 0.27rem 0 0.58rem 0;
+      font-size: 0.28rem;
+      color: #ABB1BC; }
+    .tanchuang .tishi .button {
+      display: flex;
+      justify-content: center;
+      height: 0.89rem;
+      width: 100%; }
+      .tanchuang .tishi .button .yes {
+        background-color: #0F9CFF; }
+      .tanchuang .tishi .button .no {
+        background-color: #CBCDD2; }
+      .tanchuang .tishi .button p {
+        margin-right: 0.2rem;
+        height: 100%;
+        line-height: 0.89rem;
+        text-align: center;
+        width: 2.49rem;
+        border-radius: 0.44rem;
+        color: #fff;
+        font-size: 0.32rem; }
+
+.header {
+  background-color: #fff; }
+  .header .head-in {
+    height: 1.14rem;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .header .head-in .left-arrow-noPosition {
+      width: 0.18rem;
+      height: 0.18rem;
+      border-color: #0D182E; }
+    .header .head-in p {
+      font-size: 0.32rem;
+      color: #0D182E;
+      font-weight: bold; }
+    .header .head-in span {
+      font-size: 0.28rem;
+      color: #0D182E; }
+
+.active-selected {
+  background: #FF3A3A url("../images/42-dui.png") center/contain no-repeat; }
+
+.content {
+  background-color: #F7F8FA; }
+  .content .content-in {
+    width: 95%;
+    margin: 0 auto; }
+    .content .content-in > div {
+      background-color: #fff;
+      margin-top: 0.2rem; }
+      .content .content-in > div .img {
+        position: relative;
+        width: 100%;
+        height: 3rem;
+        overflow: hidden; }
+        .content .content-in > div .img img {
+          width: 100%; }
+        .content .content-in > div .img .info {
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 1.04rem;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.15);
+          bottom: 0;
+          padding: 0 0.16rem; }
+          .content .content-in > div .img .info .l {
+            height: 1.04rem;
+            display: flex;
+            align-items: center; }
+            .content .content-in > div .img .info .l img {
+              margin: 0 0.09rem 0 0;
+              width: 0.27rem;
+              height: 0.27rem; }
+            .content .content-in > div .img .info .l span {
+              line-height: 0.35rem;
+              font-size: 0.2rem;
+              color: #fff; }
+          .content .content-in > div .img .info .delete {
+            visibility: hidden;
+            width: 0.38rem;
+            height: 0.38rem;
+            border-radius: 50%;
+            border: 1px solid #FFFFFF; }
+      .content .content-in > div h3 {
+        margin-top: 0.25rem;
+        font-size: 0.32rem;
+        font-weight: bold;
+        color: #0D182E;
+        line-height: 0.35rem;
+        margin-left: 0.28rem; }
+      .content .content-in > div .teacher {
+        padding-left: 0.28rem;
+        height: 0.78rem;
+        display: flex;
+        align-items: center; }
+        .content .content-in > div .teacher div {
+          width: 0.35rem;
+          height: 0.36rem;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex; }
+          .content .content-in > div .teacher div img {
+            width: 100%; }
+        .content .content-in > div .teacher span {
+          margin-left: 0.11rem;
+          font-size: 0.22rem;
+          color: #363E50;
+          line-height: 0.48rem; }
+
+.footer {
+  height: 1.05rem;
+  background-color: #fff; }
+  .footer .footer-in {
+    visibility: hidden;
+    height: 1.05rem;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between; }
+    .footer .footer-in .left {
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .footer .footer-in .left .select-all {
+        width: 0.38rem;
+        height: 0.38rem;
+        border-radius: 50%;
+        border: 2px solid #D4D6DF;
+        margin-right: 0.13rem; }
+      .footer .footer-in .left span {
+        font-size: 0.28rem;
+        color: #6E717C; }
+    .footer .footer-in .right {
+      width: 2.4rem;
+      line-height: 1.05rem;
+      text-align: center;
+      height: 100%;
+      background-color: #FF3A3A;
+      font-size: 0.3rem;
+      color: #fff; }
+
+/*# sourceMappingURL=42-kecheng.css.map */

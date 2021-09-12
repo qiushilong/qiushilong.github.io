@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 2707884 */
+    src: url('../fonts/17-fonts/iconfont.woff') format('woff2'),
+         url('../fonts/17-fonts/iconfont.woff2') format('woff'),
+         url('../fonts/17-fonts/iconfont.ttf') format('truetype');
+}
+  
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+    font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    background:url(../images/33-bg.png) no-repeat center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        display: flex;
+        .pic{
+            width: 2.1rem;
+            height: 2.1rem;
+            overflow: hidden;
+            border-radius: 50%;
+            border:1px solid #fff;
+            margin-left: .6rem;
+            margin-right: .42rem;
+            img{
+                width: 100%;
+            }
+        }
+        .msg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name{
+                color: #fff;
+                font-size: .6rem;
+                margin-bottom: .2rem;
+            }
+            .id{
+                color: #fff;
+                font-size: .48rem;
+            }
+        }
+    }
+    .right{
+        display: block;
+        height: 1rem;
+        font-size: .48rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1rem;
+        background-color: #3491cf;
+        border-radius: .5rem 0 0 .5rem;
+        padding: 0 .4rem;
+        .fx{
+            font-size: .4rem;
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.content{
+    border-radius: .4rem .4rem 0 0 ;
+    transform: translate(0,-0.4rem);
+    background-color:#f9fbfc;
+    ul{
+        li{
+            padding-top: .4rem;
+            background-color: #fff;
+            margin-top: .4rem;
+            .activity{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+            .main{
+                padding-bottom: .4rem;
+                h1{
+                    font-size: .6rem;
+                    font-weight: 600;
+                    margin-bottom: .66rem;;
+                }
+                .sc{
+                    display: flex;
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin-right: 1.44rem;
+                        img{
+                            width: .94rem;
+                        }
+                        p{
+                            font-size: .48rem;
+                        }
+                    }
+                }
+            }
+            .more{
+                display: flex;
+                flex-flow: row wrap;
+                width: 95%;
+                margin: 0 auto;
+                li{
+                    a{
+                        display: block;
+                        text-align: center;
+                        .iconfont{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size: .48rem;
+                        }
+                    }
+                    &:nth-child(n+2){
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            .exit{
+                width: 95%;
+                margin: 3.5rem auto 0;
+                height: 1.72rem;
+                border-radius: 1.72rem;
+                background-color: #1FA2FE;
+                text-align: center;
+                line-height: 1.72rem;
+                a{
+                    color: #fff;
+                    font-size: .56rem;
+                }
+            }
+        }
+    }
+
+}

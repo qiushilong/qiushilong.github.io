@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {
+  font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+  box-sizing: border-box; }
+
+body {
+  min-width: 320px; }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2707884 */
+  src: url("../fonts/17-fonts/iconfont.woff") format("woff2"), url("../fonts/17-fonts/iconfont.woff2") format("woff"), url("../fonts/17-fonts/iconfont.ttf") format("truetype"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.main {
+  width: 95%;
+  margin: 0 auto; }
+
+.title {
+  height: 1.6rem;
+  display: flex;
+  position: relative; }
+  .title a {
+    position: absolute;
+    display: flex;
+    width: .3rem;
+    height: 1.6rem;
+    align-items: center;
+    margin-left: .2rem;
+    font-size: .56rem;
+    color: #0D182E; }
+  .title h1 {
+    flex: 1;
+    font-size: .64rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #0D182E;
+    font-weight: 700; }
+
+.search {
+  height: 1.32rem;
+  display: flex;
+  position: relative;
+  margin: .3rem auto; }
+  .search span {
+    position: absolute;
+    font-size: .46rem;
+    color: #757575;
+    top: .45rem;
+    left: .4rem; }
+  .search input {
+    width: 100%;
+    height: 1.32rem;
+    outline: none;
+    border: none;
+    background-color: #F5F6FA;
+    border-radius: 1.5rem;
+    font-size: .48rem;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    color: #757575; }
+  .search div {
+    position: absolute;
+    right: 0;
+    width: 2.2rem;
+    height: 1.32rem;
+    background-image: linear-gradient(to right, #50B7FF, #0F9BFE);
+    color: #fff;
+    border-radius: .7rem;
+    font-size: .52rem;
+    line-height: 1.32rem;
+    text-align: center; }
+
+.nav {
+  margin: .16rem auto; }
+  .nav ul {
+    display: flex;
+    justify-content: space-between; }
+    .nav ul .active {
+      font-weight: 700;
+      height: .5rem;
+      border-bottom: 10px solid rgba(90, 190, 253, 0.7);
+      font-size: .56rem; }
+    .nav ul li {
+      font-size: .52rem; }
+
+.content {
+  background-color: #f7f8fa;
+  margin-top: .6rem; }
+  .content ul {
+    display: grid;
+    grid-template-columns: 7rem 7rem;
+    grid-gap: 0.25em;
+    grid-auto-flow: row dense;
+    justify-content: space-between; }
+    .content ul li .top {
+      position: relative;
+      width: 6.6rem;
+      height: 6.76rem;
+      border-top-left-radius: .1rem;
+      border-top-right-radius: .1rem;
+      overflow: hidden; }
+      .content ul li .top img {
+        width: 6.6rem; }
+      .content ul li .top span {
+        position: absolute;
+        top: .26rem;
+        right: .28rem;
+        color: #fff;
+        font-size: .64rem; }
+    .content ul li .bottom {
+      width: 6.6rem;
+      background-color: #fff;
+      padding: .36rem 0 0 .32rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center; }
+      .content ul li .bottom h1 {
+        font-size: .48rem;
+        font-weight: 600; }
+      .content ul li .bottom p {
+        font-size: .44rem;
+        color: #6F747E;
+        margin: .2rem 0; }
+
+/*# sourceMappingURL=doutui.css.map */

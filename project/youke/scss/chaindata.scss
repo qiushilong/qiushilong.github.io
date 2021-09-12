@@ -1,0 +1,149 @@
+*{
+    font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+}
+
+body{
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 2707884 */
+    src: url('../fonts/17-fonts/iconfont.woff') format('woff2'),
+         url('../fonts/17-fonts/iconfont.woff2') format('woff'),
+         url('../fonts/17-fonts/iconfont.ttf') format('truetype');
+}
+  
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title{
+    height: 1.6rem;
+    display: flex;
+    position: relative;
+    a{
+        position: absolute;
+        display: flex;
+        width: .3rem;
+        height: 1.6rem;
+        align-items: center;
+        margin-left: .2rem;
+        font-size: .56rem;
+        color: #0D182E;
+    }
+    h1{
+        flex: 1;
+        font-size: .64rem;
+        line-height: 1.6rem; 
+        text-align: center;  
+        color: #0D182E;
+        font-weight: 700;
+    }
+}
+
+.search{
+    height: 1.32rem;
+    display: flex;
+    position: relative;
+    margin: .3rem auto;
+    span{
+        position: absolute;
+        font-size: .46rem;
+        color: #757575;
+        top: .45rem;
+        left: .4rem;
+    }
+    input{
+        width: 100%;
+        height: 1.32rem;
+        outline: none;
+        border: none;
+        background-color: #F5F6FA;
+        border-radius: 1.5rem;
+        font-size: .48rem;
+        padding-left: 1rem;
+        color: #757575;
+    }
+}
+
+.nav{
+    margin: .16rem auto;
+    ul{
+        display: flex;
+        justify-content: center;
+        .active{
+            font-weight: 700;
+            height: .5rem;
+            border-bottom: 10px solid rgba(90, 190, 253,.7);
+            font-size: .56rem;
+        }
+        li{
+            font-size: .52rem;
+            margin: 0 .8rem;
+        }
+    }
+}
+
+.content{
+    
+    table{
+        width: 110%;
+        margin-top: .4rem;
+        tr{
+            width: 100%;
+            font-size: .48rem;
+            th{
+                margin-right: 1.1rem;
+                text-align: center;
+            }
+            td{
+                text-align: center;
+                height: 60px
+            }
+            .jp{
+                img{
+                    width: .8rem;
+                    height: .8rem;
+                    transform: translate(0,.04rem);
+                }
+            }
+            .nojp{
+                display: inline-block;
+                width: .8rem;
+                height: .8rem;
+                line-height: .8rem;
+                text-align: center;
+                background-color: #EFEFF1;
+                color: #B2BBC3;
+                border-radius: 50%;
+                font-size: .44rem;
+            }
+            .product_img{
+                div{
+                    display: inline-block;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    overflow: hidden;
+                    img{
+                        width: .98rem;
+                        margin-top: -0.54rem;
+                        margin-left: -0.14rem;
+                    }
+                    transform: translate(0,.4rem);
+                }
+            }
+            .price{
+                color: #FF3A3A;
+            }
+        }
+    }
+}

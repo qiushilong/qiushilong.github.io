@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-系统设置</title>
+    <link rel="stylesheet" href="scss/59-systemsetting.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="me.html" class="left-arrow-noPosition"></a>
+        <p class="title">系统设置</p>
+    </div>
+</header>
+<section class="content">
+    <div class="head-p">
+        <div class="h-p-in">
+            <div class="img"><img src="images/59-head-picture.jpg" alt=""></div>
+            <a href="57-personFile.html" class="right-arrow-noPosition"></a>
+        </div>
+    </div>
+    <div class="tools">
+        <div class="tools-in">
+            <div class="border"><span>账户安全</span><a href="61Security.html" class="right-arrow-noPosition"></a></div>
+            <div class="border"><span>关联账号</span><a href="68account.html" class="right-arrow-noPosition"></a></div>
+            <div class="border"><span>问题反馈</span><a href="69Suggestions.html" class="right-arrow-noPosition"></a></div>
+            <div class="cache border"><span>清除缓存</span><p><span>16.8M</span><a href="" class="right-arrow-noPosition"></a></p></div>
+            <div class="border"><span>关于我们</span><a href="70aboutUs.html" class="right-arrow-noPosition"></a></div>
+        </div>
+    </div>
+</section>
+<script>
+    window.onload=function (){
+        function getHeight(){
+            let content=document.getElementsByClassName("content").item(0);
+            let header=document.getElementsByTagName("header").item(0).offsetHeight;
+            let heigth=window.innerHeight-header;
+            content.style.height=heigth+"px";
+        }
+        getHeight();
+        window.onresize=function (){
+            getHeight();
+        }
+    }
+</script>
+</body>
+</html>

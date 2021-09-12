@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2707231 */
+  src: url('../fonts/01-fonts/iconfont.woff2') format('woff2'),
+       url('../fonts/01-fonts/iconfont.woff') format('woff'),
+       url('../fonts/01-fonts/iconfont.tff') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouye:before {
+  content: "\e64c";
+}
+
+.icon-quanzi1:before {
+  content: "\e632";
+}
+
+.icon-biaoqianA01_wode-30:before {
+  content: "\eaa8";
+}
+
+.icon-biaoqiankuozhan_kecheng-147:before {
+  content: "\eb0b";
+}
+
+.icon-chakan:before {
+  content: "\e611";
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 14.4vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index: 999;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer > div > a > .iconfont {
+  font-size: 5.3333333333vw;
+}
+.footer > div > a > p {
+  color: #B3C0C6;
+  font-size: 2.6666666667vw;
+}
+.footer > div > a > p.active {
+  color: #0F9CFF;
+}
+
+/*# sourceMappingURL=footer.css.map */

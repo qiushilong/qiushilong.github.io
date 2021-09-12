@@ -1,0 +1,137 @@
+// inphone6 按1rem=50px来算，2倍稿不用除2
+
+*{
+    font-family: 'PingFang','Microsoft YaHei',Arial,'宋体';
+}
+
+body{
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 2707884 */
+    src: url('../fonts/17-fonts/iconfont.woff') format('woff2'),
+         url('../fonts/17-fonts/iconfont.woff2') format('woff'),
+         url('../fonts/17-fonts/iconfont.ttf') format('truetype');
+}
+  
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title{
+    height: 1.6rem;
+    display: flex;
+    position: relative;
+    a{
+        position: absolute;
+        display: flex;
+        width: .3rem;
+        height: 1.6rem;
+        align-items: center;
+        margin-left: .2rem;
+        font-size: .56rem;
+        color: #0D182E;
+    }
+    h1{
+        flex: 1;
+        font-size: .64rem;
+        line-height: 1.6rem; 
+        text-align: center;  
+        color: #0D182E;
+        font-weight: 700;
+    }
+}
+
+.search{
+    height: 1.32rem;
+    display: flex;
+    position: relative;
+    margin: .3rem auto;
+    span{
+        position: absolute;
+        font-size: .46rem;
+        color: #757575;
+        top: .45rem;
+        left: .4rem;
+    }
+    input{
+        width: 100%;
+        height: 1.32rem;
+        outline: none;
+        border: none;
+        background-color: #F5F6FA;
+        border-radius: 1.5rem;
+        font-size: .48rem;
+        padding-left: 1rem;
+        color: #757575;
+    }
+}
+
+.nav{
+    margin: .16rem auto;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        .active{
+            font-weight: 700;
+            height: .5rem;
+            border-bottom: 10px solid rgba(90, 190, 253,.7);
+            font-size: .56rem;
+        }
+        li{
+            font-size: .52rem;
+        }
+    }
+}
+
+.content{
+    ul{
+        li{
+            display: flex;
+            margin-top: .6rem;
+            a{
+                img{
+                    width: 2.4rem;
+                    height: 3.32rem;
+                    border-radius: .1rem;
+                }
+            }
+            .right{
+                display: flex;
+                flex-flow: column wrap;
+                padding-left: .4rem;
+                h1{
+                    font-size: .56rem;
+                    font-weight: 700;
+                    margin-top: .2rem;
+                }
+                .label{
+                    margin: .3rem 0 .3rem;
+                    .hot{
+                        width: 2rem;
+                        height: .68rem;
+                        background-color: #ffeded;
+                        color: #FF4B4B;
+                        font-size: .4rem;
+                        border-radius: .1rem;
+                    }
+                }
+                p{
+                    font-size: .4rem;
+                    color: #FE1A46;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

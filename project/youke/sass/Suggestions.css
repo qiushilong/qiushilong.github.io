@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* 样式重置 */
+/* 禁用iPhone中Safari的字号自动调整,防止正着放和横着放 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-appearance: none;
+  resize: none; }
+
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* 图片自适应 */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/ }
+
+/* 初始化 */
+body,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei; }
+
+em,
+i {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+a:active {
+  color: #f60; }
+
+/* 按下状态，手机是没有hover只有按下效果 */
+ul,
+ol {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+/*# sourceMappingURL=reset.css.map */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+body, html {
+  height: 100%;
+  font-size: 13.3333333333vw; }
+
+body {
+  font-size: 0.26rem;
+  font-family: PingFang;
+  background-color: #F7F8FA;
+  width: 100%;
+  margin: 0 auto; }
+
+.container .top {
+  width: 100%;
+  height: 1.8rem;
+  background-color: #FFFFFF;
+  padding: 1rem 0 0.22rem 0; }
+  .container .top .title {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .container .top .title span {
+      text-align: center;
+      color: #222222;
+      font-size: 0.32rem; }
+.container .content {
+  width: 95%;
+  height: 5.9rem;
+  margin: 0.24rem auto;
+  background-color: #FFFFFF;
+  padding-top: 0.4rem; }
+  .container .content .list {
+    margin: 0 0.2rem; }
+    .container .content .list ul {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #EEF3F6; }
+      .container .content .list ul li {
+        margin: 0.26rem auto; }
+        .container .content .list ul li button {
+          width: 2rem;
+          height: 0.6rem;
+          background-color: #F6F6F9;
+          border: 0; }
+          .container .content .list ul li button.active {
+            color: #0F9CFF;
+            background-color: #E7F5FF; }
+.container .tel {
+  width: 95%;
+  height: 0.96rem;
+  margin: 0.24rem auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.96rem; }
+  .container .tel p {
+    margin: 0 0.2rem; }
+.container .bottom button {
+  width: 95%;
+  height: 0.86rem;
+  border-radius: 0.44rem;
+  background-color: #0F9CFF;
+  border: 0;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/*# sourceMappingURL=Suggestions.css.map */

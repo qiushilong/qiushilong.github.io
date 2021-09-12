@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优客-邀请好友</title>
+    <link rel="stylesheet" href="scss/45-yaoqinfriends.css">
+</head>
+<body>
+<header class="header">
+    <div class="head-in">
+        <a href="me.html" class="left-arrow-noPosition"></a>
+        <p class="title">我的邀请</p>
+        <span>邀请好友</span>
+    </div>
+</header>
+<section class="theme">
+    <div class="theme-in">
+        <img src="images/45-font.png" alt="">
+        <div class="share">立即分享</div>
+    </div>
+</section>
+<section class="code">
+    <div class="up">
+        <img src="images/45-left.png" alt="">
+        <h2>我的邀请码</h2>
+        <img src="images/45-right.png" alt="">
+    </div>
+    <div class="center">
+        <h1>WT6598</h1>
+        <div class="link">复制邀请码</div>
+    </div>
+    <p class="info">好友可在注册时直接填写邀请码</p>
+</section>
+<section class="invitation">
+    <div class="up">
+        <img src="images/45-left.png" alt="">
+        <h2>我的邀请</h2>
+        <img src="images/45-right.png" alt="">
+    </div>
+    <div class="center">
+        <div class="direct active-button">直接粉丝</div>
+        <div class="indirect">间接粉丝</div>
+    </div>
+    <div class="direct-content">
+        <ul>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-1.jpg" alt=""></div>
+                    <span class="name">给本宫笑一个</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-2.jpg" alt=""></div>
+                    <span class="name">丸子小樱桃</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-1.jpg" alt=""></div>
+                    <span class="name">给本宫笑一个</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-2.jpg" alt=""></div>
+                    <span class="name">丸子小樱桃</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-1.jpg" alt=""></div>
+                    <span class="name">给本宫笑一个</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+            <li>
+                <div class="people">
+                    <div class="picture"><img src="images/45-people-2.jpg" alt=""></div>
+                    <span class="name">丸子小樱桃</span>
+                </div>
+                <div class="money">￥<span class="number">18.00</span></div>
+                <p class="time">2020.06.12</p>
+            </li>
+        </ul>
+    </div>
+    <div class="indirect-content">
+        <div class="content">
+        <div class="left">
+            <span>间接粉丝(人)</span>
+            <span class="int">162</span>
+        </div>
+        <div class="right">
+            <span>获得奖励(元)</span>
+            <span class="int">625.00</span>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="rules">
+    <h1>奖励规则</h1>
+    <p></p>
+    <div>
+        <div class="Serial-number">1</div>
+        <p class="text">受邀对象仅限未注册的新用户</p>
+    </div>
+    <div>
+        <div class="Serial-number">2</div>
+        <p class="text">新用户通过老用户邀请码成功注册后，老用户可获得奖励</p>
+    </div>
+    <div>
+        <div class="Serial-number">3</div>
+        <p class="text">邀请人数不设上限，邀请越多，奖励越多</p>
+    </div>
+    <div>
+        <div class="Serial-number">4</div>
+        <p class="text">若通过不正当手段恶意批量注册、无效手机号、虚假信息等获得奖励，有权封号并撤销奖励</p>
+    </div>
+</section>
+<script>
+    window.onload=function (){
+        let direct=document.getElementsByClassName("direct").item(0);
+        let indirect=document.getElementsByClassName("indirect").item(0);
+        let dc=document.getElementsByClassName("direct-content").item(0);
+        let ic=document.getElementsByClassName("indirect-content").item(0);
+        direct.onclick=function (){
+            direct.className="direct active-button";
+            indirect.className="indirect";
+            dc.style.display="block";
+            ic.style.display="none";
+        }
+        indirect.onclick=function (){
+            indirect.className="indirect active-button";
+            direct.className="direct";
+            ic.style.display="block";
+            dc.style.display="none";
+        }
+    }
+</script>
+</body>
+</html>
