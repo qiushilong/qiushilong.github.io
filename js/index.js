@@ -1,11 +1,11 @@
 let lis = document.querySelector('.lis');
-let modalbox = document.querySelector('.modalbox');
-let modalbox_close = document.querySelector('.modalbox div a');
+let modelbox = document.querySelector('.modelbox');
+let modelbox_close = document.querySelector('.modelbox div a');
 
 lis.onclick = function () {
-    modalbox.style.display = "block";
+  modelbox.style.display = "block";
 }
 
-modalbox_close.onclick = function () {
-    modalbox.style.display = "none";
+modelbox_close.onclick = function () {
+  modelbox.style.display = "none";
 }
